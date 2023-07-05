@@ -6,6 +6,7 @@ import MiniReview from '@/components/MiniReview'
 import Experience from '@/components/Experience'
 import Discover from '@/components/Discover'
 import Learn from '@/components/Learn'
+import Instructors from '@/components/Instructors'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Experience />
       <Discover />
       <Learn />
+      <Instructors />
     </>
   )
 }

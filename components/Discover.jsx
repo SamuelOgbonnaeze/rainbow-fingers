@@ -43,7 +43,7 @@ const Discover = () => {
             {/* Guitar Cards */}
             <div className='mt-[51px] w-[1301px] h-[515px] flex grid-cols-4 gap-[20px] justify-between mx-auto '>
                 {/* 1st Card */}
-                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#E0E0E0]'>
+                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#F2F2F2] rounded-[16px]'>
 
                     <Image
                         src={Sample_1}
@@ -64,7 +64,9 @@ const Discover = () => {
                         <p className='ml-12 w-[85px] h-[12px] font-nunito font-semibold text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
                     </div>
 
-                    <div className='mt-[48px] flex items-center'>
+                    <hr className='mt-[21px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
+
+                    <div className='mt-[15px] flex items-center'>
                         <Image
                             src={Ratings}
                             width={116.03}
@@ -88,13 +90,13 @@ const Discover = () => {
 
                 </div>
                 {/* 2nd Card */}
-                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#E0E0E0]'>
+                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#F2F2F2] rounded-[16px]'>
 
                     <Image
                         src={Sample_2}
                         width={274}
                         height={240.47}
-                        alt='sample_1 image'
+                        alt='sample_2 image'
                         className=' rounded-[25px] ml-[18px]'
                     />
 
@@ -109,7 +111,9 @@ const Discover = () => {
                         <p className='ml-12 w-[85px] h-[12px] font-nunito font-semibold text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
                     </div>
 
-                    <div className='mt-[48px] flex items-center'>
+                    <hr className='mt-[21px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
+
+                    <div className='mt-[15px] flex items-center'>
                         <Image
                             src={Ratings}
                             width={116.03}
@@ -133,13 +137,13 @@ const Discover = () => {
 
                 </div>
                 {/* 3rd Card */}
-                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#E0E0E0]'>
+                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#F2F2F2] rounded-[16px]'>
 
                     <Image
                         src={Sample_3}
                         width={274}
                         height={240.47}
-                        alt='sample_1 image'
+                        alt='sample_3 image'
                         className=' rounded-[25px] ml-[18px]'
                     />
 
@@ -154,7 +158,9 @@ const Discover = () => {
                         <p className='ml-12 w-[85px] h-[12px] font-nunito font-semibold text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
                     </div>
 
-                    <div className='mt-[48px] flex items-center'>
+                    <hr className='mt-[21px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
+
+                    <div className='mt-[15px] flex items-center'>
                         <Image
                             src={Ratings}
                             width={116.03}
@@ -178,13 +184,13 @@ const Discover = () => {
 
                 </div>
                 {/* 4th Card */}
-                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#E0E0E0]'>
+                <div className='w-[310px] h-[504px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#F2F2F2] rounded-[16px]'>
 
                     <Image
                         src={Sample_4}
                         width={274}
                         height={240.47}
-                        alt='sample_1 image'
+                        alt='sample_4 image'
                         className=' rounded-[25px] ml-[18px]'
                     />
 
@@ -199,7 +205,9 @@ const Discover = () => {
                         <p className='ml-12 w-[85px] h-[12px] font-nunito font-semibold text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
                     </div>
 
-                    <div className='mt-[48px] flex items-center'>
+                    <hr className='mt-[21px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
+
+                    <div className='mt-[15px] flex items-center'>
                         <Image
                             src={Ratings}
                             width={116.03}
