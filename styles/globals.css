@@ -8,9 +8,11 @@ html {
 }
 
 .gradient {
-  background: linear-gradient(90deg, #E8E8E8 50%, #AB0606 50%);
+  background: linear-gradient(90deg, #E8E8E8 50%, #920000 50%);
 }
-
+.bg-gradient-right{
+  background: linear-gradient(90deg, #920000 100%, #E24F29 100%)
+}
 .font-nunito {
   font-family: 'Nunito', sans-serif;
 }
@@ -21,4 +23,7 @@ html {
 
 .font-hanken {
   font-family: 'Hanken Grotesk', sans-serif;
+}
+.font-inter{
+  font-family: 'Inter', sans-serif;
 }

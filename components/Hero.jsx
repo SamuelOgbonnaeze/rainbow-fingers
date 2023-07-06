@@ -34,7 +34,7 @@ const Hero = () => {
                             className='w-full h-full sm:h-full ' />
                     </div>
                 </div>
-                <div className='w-[30%] flex flex-col'>
+                <div className='w-[30%] flex flex-col bg-gradient-right'>
                     <div className='flex flex-col items-center justify-between gap-[30px] top-[207px] w-[308px] h-[396px] mx-auto'>
                         <Link href="/">
                             <div className='w-[308px] h-[112px] text-center  rounded-[25px] border-[1px] border-[#FCEBE7] bg-[#600000]'>
