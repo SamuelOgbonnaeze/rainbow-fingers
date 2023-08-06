@@ -6,9 +6,9 @@ import ReviewStars from '../public/images/review-stars.png'
 
 const MiniReview = () => {
     return (
-        <div className='bg-white  rounded-[25px] h-[157px] w-[1305px] mx-auto mt-[-31px] '>
+        <div className='bg-white absolute rounded-[25px] h-[157px] w-full px-auto  z-30'>
 
-            <div className=' grid grid-cols-4  h-[120px] mx-[50px] pt-[24px] gap-2 '>
+            <div className='hidden lg:grid grid-cols-4 lg:w-[1200px] h-[120px] mx-auto pt-[24px] gap-2 '>
                 {/* 1st box */}
                 <div className='flex gap-9 justify-items-center  text-white bg-[#DF3B11] rounded-[16px] border-[1px] pl-[26px]  '>
                     <div className='mt-[38px]'>
