@@ -42,7 +42,7 @@ const Nav = () => {
           </Link>
         </div>
 
-        <div className={nav ? 'absolute text-gray-200 flex lg:hidden z-10 right-0 top-[0px] h-[700px] bg-[#600000]' :
+        <div className={nav ? 'absolute text-gray-200 flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#600000]' :
             'absolute hidden'}>
           <ul className='flex flex-col w-full items-center  justify-center text-center'>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Lessons </Link></li>

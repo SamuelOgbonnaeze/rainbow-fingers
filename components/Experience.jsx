@@ -15,12 +15,12 @@ const Experience = () => {
                 </div>
             </div>
             {/* paragraph text */}
-            <div className='mt-[51px] w-full md:w-[445px] lg:w-[695px] h-[57px] mx-auto text-center'>
+            <div className='mt-[51px] w-[350px] md:w-[450px] lg:w-[695px] h-[57px] mx-auto text-center'>
                 <p className='text-[#000000] leading-[20.5px] md:leading-[30.5px] text-[15px] md:text-[20px] font-normal'>From guitars and accessories to expert guitar classes, we're passionate about helping you achieve your musical goals.</p>
             </div>
             {/* Cards */}
-            <div className='w-full px-16 lg:w-[1220px] md:h-[287px] mt-[103px] mx-auto items-center '>
-                <div className='  grid grid-rows-3 md:grid-cols-3 justify-between gap-8'>
+            <div className='w-full px-16 lg:w-[1220px] md:h-[287px] mt-[103px] mx-auto items-center md:mb-[350px] lg:mb-0 '>
+                <div className='  grid grid-rows-3 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8'>
                     {/* 1st Card */}
                     <div className='w-[287px] h-[284px] flex flex-col mx-auto'>
                         <Image
