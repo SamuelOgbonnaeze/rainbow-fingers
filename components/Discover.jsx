@@ -74,7 +74,7 @@ const Discover = () => {
                             className='mt-[13px] ml-[10px] lg:ml-[25px] w-[70px] md:w-[116px] '
                         />
 
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
+                        <button className='w-[80px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
                             <div className='mx-auto lg:ml-[-10px] mt-[-2px] md:mt-[-6px] lg:mt-0'>
                                 <IoIosAddCircleOutline
                                     size={18}
@@ -123,7 +123,7 @@ const Discover = () => {
                             className='mt-[13px] ml-[10px] lg:ml-[25px] w-[70px] md:w-[116px] '
                         />
 
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
+                        <button className='w-[80px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
                             <div className='mx-auto lg:ml-[-10px] mt-[-2px] md:mt-[-6px] lg:mt-0'>
                                 <IoIosAddCircleOutline
                                     size={18}
@@ -172,7 +172,7 @@ const Discover = () => {
                             className='mt-[13px] ml-[10px] lg:ml-[25px] w-[70px] md:w-[116px] '
                         />
 
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
+                        <button className='w-[80px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
                             <div className='mx-auto lg:ml-[-10px] mt-[-2px] md:mt-[-6px] lg:mt-0'>
                                 <IoIosAddCircleOutline
                                     size={18}
@@ -221,7 +221,7 @@ const Discover = () => {
                             className='mt-[13px] ml-[10px] lg:ml-[25px] w-[70px] md:w-[116px] '
                         />
 
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
+                        <button className='w-[80px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] bg-[#E24F29] text-white items-center hover:shadow-xl'>
                             <div className='mx-auto lg:ml-[-10px] mt-[-2px] md:mt-[-6px] lg:mt-0'>
                                 <IoIosAddCircleOutline
                                     size={18}
@@ -242,7 +242,7 @@ const Discover = () => {
 
             {/* go to store button */}
 
-            <div className='w-[250px] md:w-[355px] h-[46px] mt-[569px] lg:mt-[469px] mx-auto rounded-[60px] border-solid border-[1px] border-[#E24F29] gap-[10px] px-[24px] py-[13px] justify-center hover:bg-[#E24F29] group '>
+            <div className='w-[250px] md:w-[355px] h-[46px] mt-[569px] lg:mt-[109px] mx-auto rounded-[60px] border-solid border-[1px] border-[#E24F29] gap-[10px] px-[24px] py-[13px] justify-center hover:bg-[#E24F29] group '>
                 <div className='w-[87px] h-[20px] mx-auto '>
                     <Link href='/' className='justify-center ' >
                         <button className='font-medium font-nunito  text-[16px] text-[#E24F29] leading-[20.48px] text-center -tracking-2 group-hover:text-white '>Go to store</button>

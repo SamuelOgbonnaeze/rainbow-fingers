@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <div className='w-full gradient justify-between'>
             <div className='container flex flex-row items-center w-full  mx-auto '>
-                <div className='w-[32%] flex flex-col pt-[50px]'>
+                <div className='w-[50%] lg:w-[32%] flex flex-col pt-[50px]'>
                     <div className='text-[#050304] py-24 lg:py-16 px-2'>
                         <h2 className='font-bold text-4xl md:text-5xl lg:text-7xl'>Play Like a <span className='text-[#E24F29]'>Pro</span></h2>
                         <p className='font-hanken font-normal text-[18px] mt-4'>Find the perfect guitar and accessories and take your skills to the next level with expert guitar classes and repair services.</p>
@@ -25,7 +25,7 @@ const Hero = () => {
 
                     </div>
                 </div>
-                <div className='w-[30%] '>
+                <div className='lg:w-[30%] '>
                     <div className='w-full m-0 p-0 hidden lg:flex'>
                         <Image
                             src={HeroImage}
@@ -34,7 +34,7 @@ const Hero = () => {
                             className='w-full h-full  ' />
                     </div>
                 </div>
-                <div className='w-[30%] flex flex-col bg-gradient-right pt-[50px]'>
+                <div className='w-[35%] lg:w-[30%] flex flex-col bg-gradient-right pt-[50px]'>
                     <div className='flex flex-col items-center justify-between gap-[30px] top-[207px] w-[200px] lg:w-[308px] h-[396px]'>
                         <Link href="/">
                             <div className='w-[100px] lg:w-[308px] h-[105px] lg:h-[112px] text-center  rounded-[25px] border-[1px] border-[#FCEBE7] bg-[#600000]'>
