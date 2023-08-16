@@ -19,12 +19,12 @@ const Nav = () => {
 
 
   return (
-    <div className='absolute w-full h-[113px]'>
+    <div className='absolute w-full h-[113px] z-10'>
 
 
       <div className={lessonnav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
         {/* nav logo */}
-        <div className='ml-[100px]'>
+        <div className='ml-2  md:ml-6 lg:ml-[100px]'>
           <Link href='/' className='flex items-center ml-4'>
             <Image
               src={Logo}

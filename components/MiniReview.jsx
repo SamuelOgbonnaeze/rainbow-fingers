@@ -6,7 +6,7 @@ import ReviewStars from '../public/images/review-stars.png'
 
 const MiniReview = () => {
     return (
-        <div className='bg-white absolute rounded-[25px] h-[157px] w-full px-auto  z-30'>
+        <div className='bg-white absolute rounded-[25px] h-[157px] w-full px-auto  lg:z-10'>
 
             <div className='hidden lg:grid grid-cols-4 lg:w-[1200px] h-[120px] mx-auto pt-[24px] gap-2 '>
                 {/* 1st box */}

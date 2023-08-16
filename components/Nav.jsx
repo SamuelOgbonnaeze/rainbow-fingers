@@ -26,7 +26,7 @@ const Nav = () => {
 
       <div className={nav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
         {/* nav logo */}
-        <div className='ml-[100px]'>
+        <div className='ml-2  md:ml-6 lg:ml-[100px]'>
           <Link href='/' className='flex items-center ml-4'>
             <Image
               src={Logo}
@@ -44,7 +44,7 @@ const Nav = () => {
 
         <div className={nav ? 'absolute text-gray-200 flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#600000]' :
             'absolute hidden'}>
-          <ul className='flex flex-col w-full items-center  justify-center text-center'>
+          <ul className='flex flex-col w-full items-center mt-40 lg:justify-center text-center'>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/Lessons'> Lessons </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Hub </Link></li>
