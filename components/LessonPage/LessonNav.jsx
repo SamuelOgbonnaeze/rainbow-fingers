@@ -6,7 +6,7 @@ import { FiShoppingCart } from 'react-icons/fi'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
-import Namechip from '@/public/images/namechip.png'
+import Namechip from '@/public/images/Namechip.png'
 
 const Nav = () => {
   const [lessonnav, setLessonNav] = useState(false)
