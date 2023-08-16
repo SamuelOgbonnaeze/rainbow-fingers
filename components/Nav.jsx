@@ -26,7 +26,7 @@ const Nav = () => {
 
       <div className={nav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
         {/* nav logo */}
-        <div>
+        <div className='ml-[100px]'>
           <Link href='/' className='flex items-center ml-4'>
             <Image
               src={Logo}
@@ -45,7 +45,7 @@ const Nav = () => {
         <div className={nav ? 'absolute text-gray-200 flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#600000]' :
             'absolute hidden'}>
           <ul className='flex flex-col w-full items-center  justify-center text-center'>
-            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Lessons </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/Lessons'> Lessons </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Hub </Link></li>
             <li><Link href='/' className='w-[82px] h-[32px] p-3' >
@@ -71,7 +71,7 @@ const Nav = () => {
           <div className='container'>
 
             <div className=' ml-[45px] w-[350px] h-[32px] gap-[24px] items-center justify-between flex'>
-              <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
+              <Link href='/Lessons' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Lessons</p>
               </Link>
               <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
