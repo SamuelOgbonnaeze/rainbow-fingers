@@ -23,8 +23,25 @@ const LessonMain = () => {
                     </div>
 
                 </div>
-                vevr
+                {/* Acoustic, Electric,Bass */}
+                <div className='md:w-[70%] lg:w-[50%]  h-[50px] grid grid-cols-2 md:grid-cols-3 gap-[20px] mt-[47px] md:mt-[77px] mx-auto justify-between items-center mb-[100px] font-nunito font-normal text-[#363F5E]'>
+                    {/* Acoustic */}
+                    <div className=' h-full  px-[24px] py-[13px] rounded-[60px] hover:border-[#DF3B11] hover:border-solid hover:border-b-[4px] group'>
+                        <p className=' h-[20px] -tracking-2 text-[16px] leading-[20.48px] text-center  group-hover:text-[#E24F29]'>Acoustic guitar</p>
+                    </div>
+                    {/* Electric */}
+                    <div className=' h-full  px-[24px] py-[13px]  rounded-[60px] hover:border-[#DF3B11] hover:border-solid hover:border-b-[4px] group'>
+                        <p className=' h-[20px] -tracking-2 text-[16px] leading-[20.48px] text-center font-nunito font-normal text-[#363F5E] group-hover:text-[#E24F29]'>Electric guitar</p>
+                    </div>
+                    {/* Bass */}
+                    <div className='col-span-2 md:col-span-1 h-full  px-[24px] py-[13px]  rounded-[60px] justify-center mx-auto  hover:border-[#DF3B11] hover:border-solid hover:border-b-[4px] group'>
+                        <p className=' h-[20px] -tracking-2 text-[16px] leading-[20.48px] text-center font-nunito font-normal text-[#363F5E] group-hover:text-[#E24F29]'>Bass guitar</p>
+                    </div>
+                </div>
+
+                jnvsui
             </div>
+            
         </div>
     )
 }
