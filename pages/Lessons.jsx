@@ -6,7 +6,7 @@ import LessonMain from '@/components/LessonPage/LessonMain'
 
 const Lessons = () => {
     return (
-        <div>
+        <div className='w-full'>
             <LessonNav />
             <LessonHero />
             <LessonDiscover />
