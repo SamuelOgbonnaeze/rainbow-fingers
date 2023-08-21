@@ -9,6 +9,7 @@ import Ratings from '@/public/images/rating.png'
 import RightArrow from "@/public/images/right-arrow.png"
 import { IoIosAddCircleOutline } from 'react-icons/io'
 import { AiFillHeart } from 'react-icons/ai'
+import { CiLocationOn } from 'react-icons/ci'
 
 
 
@@ -37,7 +38,7 @@ const LessonMain = () => {
             </div>
 
             {/* Massive div block */}
-            <div className='w-[95%] h-[1758px] border-solid border-[1px] border-[#E0E0E0] mx-auto mt-8'>
+            <div className='w-[95%] h-[1758px]  mx-auto mt-8'>
                 <div className='w-[95%] h-[480px] mx-auto bg-[url("/images/Virtuoso_guitar.png")] bg-cover bg-no-repeat bg-center rounded-[50px]  text-white'>
                     <div className='pt-[182px] pl-6 md:pl-16 lg:pl-20 font-nunito font-normal lg:text-center'>
                         <p className='w-[340px] h-[77px] text-4xl md:text-5xl lg:text-6xl leading-[77px]'>My learning</p>
@@ -303,20 +304,37 @@ const LessonMain = () => {
                 </div>
 
                 {/* Last div block */}
-                <div className='mt-[84px] h-[469px] rounded-[50px] bg-[#F2F2F2] '>
+                <div className='mt-[44px] md:mt-[84px] h-[469px] rounded-[50px] bg-[#F2F2F2] '>
                     {/* 1st section */}
-                    <div className='pt-[35px]'>
-
+                    <div className=' pt-[20px] md:pt-[35px]'>
                         <div className='w-[95%] h-[259px]  mx-auto bg-[url("/images/bg-1.png")] bg-cover bg-no-repeat bg-center rounded-[50px]  '>
                             <div className='pt-[70px] px-4 lg:px-12 text-[#FBFBFB] font-nunito font-light'>
                                 <p className='w-[85%] md:w-[60%] lg:w-[55%] h-[77px] text-2xl md:text-4xl lg:text-6xl leading-[77px]'>Join our <span className='font-medium text-[#E97658]'>on site classes</span></p>
                                 <p className='w-[65%] md:w-[35%] lg:w-[25%] h-[31px] text-[14px] md:text-[16px] lg:text-[20px] leading-[31px] '>Choose your preferred location</p>
                             </div>
-
-
                         </div>
                     </div>
+                    {/* 2nd section */}
+                    <div className="mt-2 md:mt-10 px-4 lg:px-12 ">
+                        <form className="flex flex-col md:flex-row gap-[10px] justify-between items-center">
+                            <div className="w-[300px] md:w-[30%] h-[48px] md:h-[68px] rounded-[50px] border-solid border-[1px] border-[#E0E0E0] ">
+                                <input className="w-full h-full rounded-[50px] pl-4 md:pl-6" type='text' placeholder="Enter Email" />
+                            </div>
 
+                            <div className="w-[300px] md:w-[30%] h-[48px] md:h-[68px] rounded-[50px] border-solid border-[1px] border-[#E0E0E0]  ">
+                                <CiLocationOn className='absolute w-[27px] h-[27px] mt-2 md:mt-4 md:ml-4 ' />
+                                <select className="w-full h-full rounded-[50px] pl-8 md:pl-16">
+                                    <option value="">Location</option>
+                                    <option value="location1">Lagos</option>
+                                    <option value="location2">Abuja</option>
+                                    <option value="location3">Kano</option>
+                                    {/* Add more options as needed */}
+                                </select>
+                            </div>
+
+                            <button className="w-[250px] md:w-[25%] h-[38px] md:h-[48px] rounded-[60px]  bg-[#E24F29] hover:bg-white border-solid border-[1px] border-[#E0E0E0] hover:border-[#E24F29] text-white hover:text-[#E24F29] font-hanken font-semibold " type='submit'>Register now</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 
