@@ -9,11 +9,11 @@ const LessonDiscover = () => {
     return (
         <div>
             <div className='w-full flex flex-cols-2 mt-[400px] md:mt-[600px] lg:mt-0  '>
-                <div className='w-[1100px] flex flex-col lg:flex-row lg:gap-[77px] items-center justify-between  mx-auto md:mx-12 lg:mx-[150px]'>
-                    <div className='w-[350px] md:w-[677px] lg:w-[50%]  font-nunito py-3 '>
+                <div className='w-[90%] flex flex-col lg:flex-row lg:gap-[77px] items-center justify-between  mx-auto md:mx-12 lg:mx-[150px]'>
+                    <div className='w-[80%] md:w-[80%] lg:w-[50%]  font-nunito py-3 '>
                         <p className=' font-light text-3xl md:text-4xl lg:text-6xl leading-8 md:leading-[57px] lg:leading-[67px] text-[#050304] '>Discover the joy of <span className='font-normal text-[#E24F29]'>Playing Guitar</span></p>
                     </div>
-                    <div className='w-[350px] md:w-[677px] lg:w-[50%]  py-6 '>
+                    <div className='w-[80%] md:w-[85%] lg:w-[50%]  py-6 '>
                         <p className=' font-hanken font-normal sm:text-[15px] md:text-[18px] lg:text-2xl  text-[#333333] leading-[30.5px]'>Our courses are designed to fit your schedule and budget, so you can learn at your own pace and on your own terms.</p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ const LessonDiscover = () => {
 
             {/* Cards */}
             {/* Three column grid */}
-            <div className='w-full lg:w-[1240px] lg:h-[272px] mt-[73px] mx-auto items-center px-3 lg:px-0 '>
+            <div className='w-full lg:w-[90%] lg:h-[272px] mt-[73px] mx-auto items-center px-3 lg:px-0 '>
                 <div className='  grid grid-rows-3 md:grid-cols-2 lg:grid-cols-3 justify-between gap-4'>
                     {/* 1st Card */}
                     <div className='w-[374px] h-[256px] flex flex-col '>

@@ -9,10 +9,10 @@ import Videobutton from '@/public/images/Video.png'
 const LessonHero = () => {
     return (
         <div className='flex relative '>
-            <div className='relative h-[704px] grid grid-rows-2 lg:grid-cols-2 items-center justify-between  md:mx-auto lg:ml-[98px] '>
+            <div className='relative w-full h-[704px] grid grid-rows-2 lg:grid-cols-2 items-center justify-between  md:mx-auto lg:ml-[98px] '>
 
                 {/* Left side */}
-                <div className='lg:w-[605px] container  mt-[240px] '>
+                <div className='w-full container  mt-[240px] '>
                     <div className='flex flex-col'>
                         <div className='  text-[#050304] py-24 lg:py-16 px-2'>
                             <h2 className='w-full md:w-[585px] md:ml-5 font-nunito font-light  text-4xl md:text-5xl lg:text-[64px] lg:leading-[67px]'>Elevate Your Playing with <span className='text-[#F2994A] font-medium'>Professionals</span></h2>
@@ -28,11 +28,11 @@ const LessonHero = () => {
 
                 </div>
                 {/* Right side */}
-                <div className='' >
+                <div className='w-[95%] ' >
                     <div className='w-full  container flex '>
                         <Image
                             src={Lessonheroimg}
-                            className='md:w-full mx-auto md:mx-0 h-full mt-[550px] md:mt-[800px] lg:mt-[250px]  '
+                            className='md:w-full mx-auto md:mx-0 h-full mt-[450px] md:mt-[800px] lg:mt-[250px]  '
                         />
 
                     </div>
@@ -40,7 +40,7 @@ const LessonHero = () => {
             </div>
 
             {/* play button */}
-            <div className='absolute  ml-[170px] md:ml-[380px] lg:ml-[700px] mt-[800px] md:mt-[875px] lg:mt-[375px] '>
+            <div className='absolute  ml-[45%] md:ml-[35%] lg:ml-[51%] mt-[800px] md:mt-[875px] lg:mt-[375px] '>
                 <Link href='https://youtu.be/HnKIfZoiKmc' className=''>
                     <Image
                         src={Videobutton}
