@@ -8,7 +8,7 @@ import LocationPin from '@/public/images/location-pin.png'
 const LessonDiscover = () => {
     return (
         <div>
-            <div className='w-full flex flex-cols-2 mt-[400px] md:mt-[600px] lg:mt-0  '>
+            <div className='w-full flex flex-cols-2 mt-[350px] md:mt-[600px] lg:mt-[200px]  '>
                 <div className='w-[90%] flex flex-col lg:flex-row lg:gap-[77px] items-center justify-between  mx-auto md:mx-12 lg:mx-[150px]'>
                     <div className='w-[80%] md:w-[80%] lg:w-[50%]  font-nunito py-3 '>
                         <p className=' font-light text-3xl md:text-4xl lg:text-6xl leading-8 md:leading-[57px] lg:leading-[67px] text-[#050304] '>Discover the joy of <span className='font-normal text-[#E24F29]'>Playing Guitar</span></p>

@@ -36,12 +36,12 @@ const LessonAlbumSlide = () => {
                 <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100 hidden md:flex' onClick= {slideLeft} size={40} />
 
                 <div id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide  '>
-                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_2} width={700} height={500} alt='/' />
-                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_1} width={700} height={500} alt='/' />
-                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_3} width={700} height={500} alt='/' />
-                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_4} width={700} height={500} alt='/' />
-                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_5} width={700} height={500} alt='/' />
-                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_6} width={700} height={500} alt='/' />
+                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_2} width={700} height={500} alt='/' />
+                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_1} width={700} height={500} alt='/' />
+                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_3} width={700} height={500} alt='/' />
+                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_4} width={700} height={500} alt='/' />
+                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_5} width={700} height={500} alt='/' />
+                    <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_6} width={700} height={500} alt='/' />
                 </div>
 
                 <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100 hidden md:flex' onClick={slideRight} size={40} />
