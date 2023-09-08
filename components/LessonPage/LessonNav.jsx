@@ -36,13 +36,14 @@ const Nav = () => {
         {/* Toggle button */}
         <div className='block lg:hidden items-center text-black'>
           <Link href='/Lessons' >
-            {lessonnav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-24 hover:text-[#DF3B11]' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 hover:text-[#DF3B11]' />}
+            {lessonnav ? <AiOutlineClose onClick={handleNav} size={20} className=' mr-28 hover:text-[#DF3B11]' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 hover:text-[#DF3B11]' />}
           </Link>
         </div>
 
         <div className={lessonnav ? 'absolute text-black  flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#FBFBFB]' :
           'absolute hidden'}>
           <ul className='flex flex-col w-full items-center  justify-center text-center'>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Home  </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/Lessons'> Lessons </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Hub </Link></li>

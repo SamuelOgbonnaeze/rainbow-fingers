@@ -6,7 +6,7 @@ import {FiShoppingCart} from 'react-icons/fi'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
-import Cart from '@/public/images/shopping-cart.png'
+
 
 const Nav = () => {
   const [nav, setNav] = useState(false)
@@ -38,7 +38,7 @@ const Nav = () => {
         {/* Toggle button */}
         <div className='block lg:hidden items-center text-[#FBFBFB]'>
           <Link href='/' >
-            {nav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-24'/> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16' />}
+            {nav ? <AiOutlineClose onClick={handleNav} size={20} className=' mr-28 text-[#600000] md:text-gray-100 '/> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-[#600000] md:text-gray-100' />}
           </Link>
         </div>
 

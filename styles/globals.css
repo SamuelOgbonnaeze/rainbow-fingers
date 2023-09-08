@@ -10,6 +10,13 @@ html {
 .gradient {
   background: linear-gradient(90deg, #E8E8E8 50%, #920000 50%);
 }
+
+@media (max-width: 768px) { /* Change 768px to your desired medium screen size */
+  .gradient {
+    background: linear-gradient(180deg, #E8E8E8 50%, #920000 50%);
+  }
+}
+
 .bg-gradient-right{
   background: linear-gradient(90deg, #920000 100%, #E24F29 100%)
 }
