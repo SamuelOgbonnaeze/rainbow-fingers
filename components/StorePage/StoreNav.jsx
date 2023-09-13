@@ -19,8 +19,8 @@ const Nav = () => {
 
 
   return (
-    <div className='absolute w-full h-[113px] z-10'>
-
+    <div className='absolute w-full h-[113px] text-white z-10'>
+ 
 
       <div className={lessonnav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
         {/* nav logo */}
@@ -43,8 +43,9 @@ const Nav = () => {
         <div className={lessonnav ? 'absolute text-black  flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#FBFBFB]' :
           'absolute hidden'}>
           <ul className='flex flex-col w-full items-center  justify-center text-center'>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Home </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/Lessons'> Lessons </Link></li>
-            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Store </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/Store'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Hub </Link></li>
             <li><Link href='/' className='w-[82px] h-[32px] p-3 hover:text-[#DF3B11]' >
               <AiOutlineShoppingCart
@@ -72,7 +73,7 @@ const Nav = () => {
               <Link href='/Lessons' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Lessons</p>
               </Link>
-              <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
+              <Link href='/Store' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Store</p>
               </Link>
               <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
+import Data from './SliderData'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import Album_1 from '@/public/images/album_art_1.png'
 import Album_2 from '@/public/images/album_art_2.png'
@@ -10,6 +11,7 @@ import Album_6 from '@/public/images/album_art_6.png'
 
 const LessonAlbumSlide = () => {
 
+    const newData = {Data}
     const slideLeft = () => {
         var slider = document.getElementById('slider')
         slider.scrollLeft = slider.scrollLeft - 500
@@ -30,12 +32,13 @@ const LessonAlbumSlide = () => {
                 <p className='font-nunito font-normal text-black text-[14px] md:text-[18px] lg:text-xl leading-6 md:leading-7 lg:leading-8'>Exceptionaly open minded and has the ability to explaing things to your understanding with patience. very good indeed</p>
             </div>
 
-{/* Album Cover Slider */}
+            {/* Album Cover Slider */}
 
             <div className='relative h-[550px] flex items-center mt-[30px] '>
-                <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100 hidden md:flex' onClick= {slideLeft} size={40} />
+                <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100 hidden md:flex' onClick={slideLeft} size={40} />
 
                 <div id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide  '>
+                   
                     <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_2} width={700} height={500} alt='/' />
                     <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_1} width={700} height={500} alt='/' />
                     <Image className='w-[400px] md:w-[500px] rounded-[50px] border-solid border-[6px] hover:border-[#FFB9A7] m-4  inline-block cursor-pointer hover:scale-105 ease-in-out duration-300' src={Album_3} width={700} height={500} alt='/' />
@@ -47,7 +50,7 @@ const LessonAlbumSlide = () => {
                 <MdChevronRight className='opacity-50 cursor-pointer hover:opacity-100 hidden md:flex' onClick={slideRight} size={40} />
             </div>
 
-           
+
         </div>
     )
 }

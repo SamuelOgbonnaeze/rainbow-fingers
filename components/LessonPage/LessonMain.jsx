@@ -15,6 +15,65 @@ import { CiLocationOn } from 'react-icons/ci'
 
 const LessonMain = () => {
 
+    function Card(props) {
+        return <div className='h-[400px] md:h-[504px] rounded-[16px] border-solid border-[1px] border-[#F2F2F2] flex flex-col pt-4 bg-[#FBFBFB] hover:shadow-xl hover:scale-105 ease-in-out duration-300'>
+            <div className='relative mx-auto w-[150px] md:w-[274px]'>
+                <Image
+                    src={props.img}
+                    width={258}
+                    height={250}
+                    alt='sample_1 image'
+
+                />
+                <div
+                    className='absolute -mt-[140px] md:-mt-[240px] ml-[120px] md:ml-[220px] rounded-[20%] hover:cursor-pointer'
+                    style={{ color: color }}
+                    onClick={handleClick}
+                    onDoubleClick={handleDoubleClick}
+                >
+                    <AiFillHeart
+                        size={26}
+                        className=''
+                    />
+                </div>
+
+            </div>
+
+
+            <p className='lg:w-[70%] h-[49px] ml-2 md:ml-4 font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[27px]  mt-[24px] text-[#050304]'>{props.headerText}
+            </p>
+
+            <div className='flex lg:w-[90%] lg:h-[20px] mt-6 justify-between ml-1 md:ml-4'>
+                <Image
+                    src={Ratings}
+                    height={20.47}
+                    className=' w-[70px] md:w-[116px] '
+                />
+                <p className='mt-1 w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F] mr-2'>{props.reviews} Reviews</p>
+            </div>
+            <hr className='mt-6 w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
+
+
+            <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between gap-[10px]'>
+                <p className=' h-[21px]  font-nunito font-extrabold text-[18px] md:text-[24px] lg:text-[28px] leading-[15px] md:ml-2 text-[#050304]'>₦{props.price}</p>
+                <button className='w-[70px] md:w-[135px] h-[58px] md:mr-4 rounded-[20px] md:rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
+                    <div className=' lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
+                        <IoIosAddCircleOutline
+                            size={18}
+                            className=''
+                        />
+                    </div>
+                    <div className='w-[60px] md:w-[110px] lg:w-[250px]'>
+                        <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] text-[#242C3D] '>Add cart</p>
+                    </div>
+                </button>
+            </div>
+
+
+
+        </div>
+    }
+
     const [color, setColor] = useState('white');
 
     const handleClick = () => {
@@ -42,7 +101,7 @@ const LessonMain = () => {
                 <div className='w-[95%] h-[480px] mx-auto bg-[url("/images/Virtuoso_guitar.png")] bg-cover bg-no-repeat bg-center rounded-[50px]  text-white'>
                     <div className='pt-[182px] pl-6 md:pl-16 lg:pl-20 font-nunito font-normal lg:text-center'>
                         <p className='w-[340px] h-[77px] text-4xl md:text-5xl lg:text-6xl leading-[77px]'>My learning</p>
-                        <p className='mt-4 w-[172px] h-[31px] text-[16px] md:text-[18px] lg:text-xl leading-[31px]'>Courses & Wishlist</p>
+                        <p className='mt-4 w-[172px] h-[31px] text-[16px] md:text-[18px] lg:text-xl leading-[31px] pt-4'>Courses & Wishlist</p>
                     </div>
 
                 </div>
@@ -74,233 +133,34 @@ const LessonMain = () => {
                             className='rounded-[16px] lg:w-[65px] lg:h-[65px] ' />
                     </div>
                     {/* 1st Card */}
-                    <div className='h-[400px] md:h-[504px] rounded-[16px] border-solid border-[1px] border-[#F2F2F2] flex flex-col pt-4 bg-[#FBFBFB] hover:shadow-xl'>
-                        <div className='relative mx-auto w-[150px] md:w-[274px]'>
-                            <Image
-                                src={Learn_1}
-                                width={258}
-                                height={250}
-                                alt='sample_1 image'
-
-                            />
-                            <div
-                                className='absolute -mt-[140px] md:-mt-[240px] ml-[120px] md:ml-[220px] rounded-[20%] hover:cursor-pointer'
-                                style={{ color: color }}
-                                onClick={handleClick}
-                                onDoubleClick={handleDoubleClick}
-                            >
-                                <AiFillHeart
-                                    size={26}
-                                    className=''
-                                />
-                            </div>
-
-                        </div>
-
-
-                        <p className='lg:w-[228px] h-[49px] ml-2 md:ml-4 font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[27px]  mt-[24px] text-[#050304]'>Mastering Guitar: From Beginner to Pro
-                        </p>
-
-                        <div className='flex lg:w-[90%] lg:h-[20px] mt-6 justify-between ml-1 md:ml-4'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className='mt-1 w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F] mr-2'>34 Reviews</p>
-                        </div>
-                        <hr className='mt-6 w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                        <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between gap-[10px]'>
-                            <p className=' h-[21px]  font-nunito font-extrabold text-[18px] md:text-[24px] lg:text-[28px] leading-[15px] md:ml-2 text-[#050304]'>₦150,500</p>
-                            <button className='w-[70px] md:w-[135px] h-[58px] md:mr-4 rounded-[20px] md:rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                                <div className=' lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                    <IoIosAddCircleOutline
-                                        size={18}
-                                        className=''
-                                    />
-                                </div>
-                                <div className='w-[60px] md:w-[110px] lg:w-[250px]'>
-                                    <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] text-[#242C3D] '>Add cart</p>
-                                </div>
-                            </button>
-                        </div>
-
-
-
-                    </div>
+                    <Card
+                        img={Learn_1}
+                        headerText='Mastering Guitar: From Beginner to Pro'
+                        reviews='34'
+                        price='150,000'
+                    />
                     {/* 2nd Card */}
-                    <div className='h-[400px] md:h-[504px] rounded-[16px] border-solid border-[1px] border-[#F2F2F2] flex flex-col pt-4 bg-[#FBFBFB] hover:shadow-xl'>
-                        <div className='relative mx-auto w-[150px] md:w-[274px]'>
-                            <Image
-                                src={Learn_2}
-                                width={258}
-                                height={250}
-                                alt='sample_1 image'
-
-                            />
-                            <div
-                                className='absolute -mt-[140px] md:-mt-[240px] ml-[120px] md:ml-[220px] rounded-[20%] hover:cursor-pointer'
-                                style={{ color: color }}
-                                onClick={handleClick}
-                                onDoubleClick={handleDoubleClick}
-                            >
-                                <AiFillHeart
-                                    size={26}
-                                    className=''
-                                />
-                            </div>
-
-                        </div>
-
-
-                        <p className='lg:w-[263px] h-[49px] ml-2 md:ml-4 font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[27px]  mt-[24px] text-[#050304]'>Essential Guitar Techniques: Unlock Your Potential
-                        </p>
-
-                        <div className='flex lg:w-[90%] lg:h-[20px] mt-6 justify-between ml-1 md:ml-4'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className='mt-1 w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F] mr-2'>34 Reviews</p>
-                        </div>
-                        <hr className='mt-6 w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                        <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between gap-[10px]'>
-                            <p className=' h-[21px]  font-nunito font-extrabold text-[18px] md:text-[24px] lg:text-[28px] leading-[15px] md:ml-2 text-[#050304]'>₦150,500</p>
-                            <button className='w-[70px] md:w-[135px] h-[58px] md:mr-4 rounded-[20px] md:rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                                <div className=' lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                    <IoIosAddCircleOutline
-                                        size={18}
-                                        className=''
-                                    />
-                                </div>
-                                <div className='w-[60px] md:w-[110px] lg:w-[250px]'>
-                                    <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] text-[#242C3D] '>Add cart</p>
-                                </div>
-                            </button>
-                        </div>
-
-
-
-                    </div>
+                    <Card
+                        img={Learn_2}
+                        headerText='Essential Guitar Techniques: Unlock Your Potential'
+                        reviews='34'
+                        price='150,000'
+                    /> 
                     {/* 3rd Card */}
-                    <div className='h-[400px] md:h-[504px] rounded-[16px] border-solid border-[1px] border-[#F2F2F2] flex flex-col pt-4 bg-[#FBFBFB] hover:shadow-xl'>
-                        <div className='relative mx-auto w-[150px] md:w-[274px]'>
-                            <Image
-                                src={Learn_3}
-                                width={258}
-                                height={250}
-                                alt='sample_1 image'
-
-                            />
-                            <div
-                                className='absolute -mt-[140px] md:-mt-[240px] ml-[120px] md:ml-[220px] rounded-[20%] hover:cursor-pointer'
-                                style={{ color: color }}
-                                onClick={handleClick}
-                                onDoubleClick={handleDoubleClick}
-                            >
-                                <AiFillHeart
-                                    size={26}
-                                    className=''
-                                />
-                            </div>
-
-                        </div>
-
-
-                        <p className='lg:w-[271px] h-[49px] ml-2 md:ml-4 font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[27px]  mt-[24px] text-[#050304]'>Acoustic Guitar Foundations: Learn to Play Beautifully
-                        </p>
-
-                        <div className='flex lg:w-[90%] lg:h-[20px] mt-6 justify-between ml-1 md:ml-4'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className='mt-1 w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F] mr-2'>34 Reviews</p>
-                        </div>
-                        <hr className='mt-6 w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                        <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between gap-[10px]'>
-                            <p className=' h-[21px]  font-nunito font-extrabold text-[18px] md:text-[24px] lg:text-[28px] leading-[15px] md:ml-2 text-[#050304]'>₦150,500</p>
-                            <button className='w-[70px] md:w-[135px] h-[58px] md:mr-4 rounded-[20px] md:rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                                <div className=' lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                    <IoIosAddCircleOutline
-                                        size={18}
-                                        className=''
-                                    />
-                                </div>
-                                <div className='w-[60px] md:w-[110px] lg:w-[250px]'>
-                                    <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] text-[#242C3D] '>Add cart</p>
-                                </div>
-                            </button>
-                        </div>
-
-
-
-                    </div>
+                    <Card
+                        img={Learn_3}
+                        headerText='Acoustic Guitar Foundations: Learn to Play Beautifully'
+                        reviews='34'
+                        price='150,000'
+                    />
                     {/* 4th Card */}
-                    <div className='h-[400px] md:h-[504px] rounded-[16px] border-solid border-[1px] border-[#F2F2F2] flex flex-col pt-4 bg-[#FBFBFB] hover:shadow-xl'>
-                        <div className='relative mx-auto w-[150px] md:w-[274px]'>
-                            <Image
-                                src={Learn_4}
-                                width={258}
-                                height={250}
-                                alt='sample_1 image'
+                    <Card
+                        img={Learn_4}
+                        headerText=' Finger-style Guitar Mastery: Play Like a Pro'
+                        reviews='34'
+                        price='150,000'
+                    />
 
-                            />
-                            <div
-                                className='absolute -mt-[140px] md:-mt-[240px] ml-[120px] md:ml-[220px] rounded-[20%] hover:cursor-pointer'
-                                style={{ color: color }}
-                                onClick={handleClick}
-                                onDoubleClick={handleDoubleClick}
-                            >
-                                <AiFillHeart
-                                    size={26}
-                                    className=''
-                                />
-                            </div>
-
-                        </div>
-
-
-                        <p className='lg:w-[263px] h-[49px] ml-2 md:ml-4 font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[27px]  mt-[24px] text-[#050304]'>Finger-style Guitar Mastery: Play Like a Pro
-                        </p>
-
-                        <div className='flex lg:w-[90%] lg:h-[20px] mt-6 justify-between ml-1 md:ml-4'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className='mt-1 w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F] mr-2'>34 Reviews</p>
-                        </div>
-                        <hr className='mt-6 w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                        <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between gap-[10px]'>
-                            <p className=' h-[21px]  font-nunito font-extrabold text-[18px] md:text-[24px] lg:text-[28px] leading-[15px] md:ml-2 text-[#050304]'>₦150,500</p>
-                            <button className='w-[70px] md:w-[135px] h-[58px] md:mr-4 rounded-[20px] md:rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                                <div className=' lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                    <IoIosAddCircleOutline
-                                        size={18}
-                                        className=''
-                                    />
-                                </div>
-                                <div className='w-[60px] md:w-[110px] lg:w-[250px]'>
-                                    <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] text-[#242C3D] '>Add cart</p>
-                                </div>
-                            </button>
-                        </div>
-
-
-
-                    </div>
                 </div>
 
                 {/* Last div block */}

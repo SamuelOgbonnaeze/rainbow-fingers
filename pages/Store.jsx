@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import StoreNav from '@/components/StorePage/StoreNav.jsx'
+import StoreHero from '@/components/StorePage/StoreHero'
+
 
 
 const Lessons = () => {
@@ -14,7 +16,7 @@ const Lessons = () => {
             </Head>
             <div className='w-full mx-auto'>
                 <StoreNav />
-               
+                <StoreHero />
             </div>
         </>
     )

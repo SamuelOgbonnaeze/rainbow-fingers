@@ -44,7 +44,7 @@ const LessonGenre = () => {
             />
           </div>
           <div className='w-[50%] lg:w-[55%] pt-16 font-nunito '>
-            <p className='w-[70%] md:w-[55%] lg:w-[40%] h-[27px] font-bold text-[24px] md:text-[30px]  lg:text-[40px] leading-7 text-center '>Afro Beat</p>
+            <p className='w-[70%] md:w-[55%] lg:w-[50%] h-[27px] font-bold text-[24px] md:text-[30px]  lg:text-[40px] leading-7 text-center '>Afro Beat</p>
             <p className='w-full  mt-[48px] text-[14px] md:text-[16px] lg:text-[18px] leading-[35px] font-normal text-[#4F4F4F] '>Exceptionaly open minded and has the ability to explaing things to your understanding with patience. very good indeed</p>
             <Link href='/'>
               <div className='md:w-[50%] lg:w-[45%] mt-[70px] rounded-[60px] gap-[10px] px-6 py-3.5 text-[12px] md:text-[14px] lg:text-[16px] leading-5 -tracking-2 font-normal text-center text-[#E24F29] hover:text-white border-solid border-[1px] border-[#E24F29] bg-white hover:bg-[#E24F29] '>Open library</div>
