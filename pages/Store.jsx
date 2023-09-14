@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import StoreNav from '@/components/StorePage/StoreNav.jsx'
 import StoreHero from '@/components/StorePage/StoreHero'
+import StoreCourses from '@/components/StorePage/StoreCourses'
+import StoreFooter from '@/components/StorePage/StoreFooter'
 
 
 
@@ -17,6 +19,8 @@ const Lessons = () => {
             <div className='w-full mx-auto'>
                 <StoreNav />
                 <StoreHero />
+                <StoreCourses />    
+                <StoreFooter />
             </div>
         </>
     )
