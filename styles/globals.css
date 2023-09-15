@@ -38,3 +38,7 @@ html {
 .gradient-border {
   background: linear-gradient(180deg, #EF9D88 0%, #FFB9A7 100%);
 }
+
+input:focus {
+  outline: none;
+}

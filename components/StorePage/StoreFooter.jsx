@@ -5,7 +5,7 @@ import { AiOutlineFacebook } from 'react-icons/ai'
 
 const StoreFooter = () => {
     return (
-        <div className='mt-[700px] md:mt-[1000px] lg:mt-[148px] w-full h-[420px] -ml-[4px] bg-[#DF3B11] text-white'>
+        <div className=' w-full h-[420px] -ml-[4px] bg-[#DF3B11] text-white'>
             <div className='grid grid-cols-2 md:grid-cols-3 gap-6  w-full mx-auto justify-between pt-[65px] px-16'>
                 {/* 1st column */}
                 <div className='flex  flex-col  h-[163px]  font-lato font-normal text-[16px] lg:text-[20px] leading-[20.5px] mx-auto'>
