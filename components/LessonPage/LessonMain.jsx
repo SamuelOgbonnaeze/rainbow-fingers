@@ -181,9 +181,9 @@ const LessonMain = () => {
                                 <input className="w-full h-full rounded-[50px] pl-4 md:pl-6" type='text' placeholder="Enter Email" />
                             </div>
 
-                            <div className="w-[300px] md:w-[30%] h-[48px] md:h-[68px] rounded-[50px] border-solid border-[1px] border-[#E0E0E0]  ">
-                                <CiLocationOn className='absolute w-[27px] h-[27px] mt-2 md:mt-4 md:ml-4 ' />
-                                <select className="w-full h-full rounded-[50px] pl-8 md:pl-16">
+                            <div className="w-[300px] md:w-[30%] h-[48px] md:h-[68px] rounded-[50px] border-solid border-[1px] border-[#E0E0E0] flex items-center">
+                                <CiLocationOn className='absolute w-[27px] h-[27px]  md:ml-4 ' />
+                                <select className="w-full h-full rounded-[50px] pl-8 md:pl-16 pr-4">
                                     <option value="">Location</option>
                                     <option value="location1">Lagos</option>
                                     <option value="location2">Abuja</option>

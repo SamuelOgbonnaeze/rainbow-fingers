@@ -18,9 +18,12 @@ const LessonHero = () => {
                         </div>
 
                         <div class="md:ml-5 px-2 z-10 ">
-                            <button class=" lg:w-[295px] h-12 bg-[#E24F29] hover:bg-white px-3 text-white hover:text-[#E24F29] rounded-[60px] py-3 font-nunito text-[12px] md:text-[18px] border-solid border-[1px] border-[#E24F29]">
-                                Get started now
-                            </button>
+                            <Link href='/Library' >
+                                <button class=" lg:w-[295px] h-12 bg-[#E24F29] hover:bg-white px-3 text-white hover:text-[#E24F29] rounded-[60px] py-3 font-nunito text-[12px] md:text-[18px] border-solid border-[1px] border-[#E24F29]">
+                                    Get started now
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
 
@@ -46,7 +49,7 @@ const LessonHero = () => {
                     />
                 </Link>
             </div>
-            
+
         </div>
     )
 }

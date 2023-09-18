@@ -46,7 +46,7 @@ const Nav = () => {
             'absolute hidden'}>
           <ul className='flex flex-col w-full items-center mt-40 lg:justify-center text-center'>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/Lessons'> Lessons </Link></li>
-            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/Store'> Store </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Hub </Link></li>
             <li><Link href='/' className='w-[82px] h-[32px] p-3' >
                 <AiOutlineShoppingCart
@@ -74,7 +74,7 @@ const Nav = () => {
               <Link href='/Lessons' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Lessons</p>
               </Link>
-              <Link href='/Store' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
+              <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Store</p>
               </Link>
               <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>

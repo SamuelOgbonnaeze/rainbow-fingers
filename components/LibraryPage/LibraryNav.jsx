@@ -9,11 +9,11 @@ import Logo from '@/public/images/logo.png'
 import Namechip from '@/public/images/Namechip.png'
 
 const Nav = () => {
-  const [storenav, setStoreNav] = useState(false)
+  const [librarynav, setLibraryNav] = useState(false)
 
 
   const handleNav = () => {
-    setStoreNav(!storenav);
+    setLibraryNav(!librarynav);
   }
 
 
@@ -22,7 +22,7 @@ const Nav = () => {
     <div className='absolute w-full h-[113px] text-white z-10'>
  
 
-      <div className={storenav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
+      <div className={librarynav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
         {/* nav logo */}
         <div className='ml-2  md:ml-6 lg:ml-[100px]'>
           <Link href='/' className='flex items-center ml-4'>
@@ -35,17 +35,17 @@ const Nav = () => {
         </div>
         {/* Toggle button */}
         <div className='block lg:hidden items-center text-black'>
-          <Link href='/Store' >
-            {storenav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-28 text-white hover:text-gray-200' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-white hover:text-gray-200' />}
+          <Link href='/Library' >
+            {librarynav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-28 text-white hover:text-gray-200' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-white hover:text-gray-200' />}
           </Link>
         </div>
 
-        <div className={storenav ? 'absolute text-black  flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#FBFBFB]' :
+        <div className={librarynav ? 'absolute text-black  flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#FBFBFB]' :
           'absolute hidden'}>
           <ul className='flex flex-col w-full items-center  justify-center text-center'>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Home </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/Lessons'> Lessons </Link></li>
-            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/Store'> Store </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Hub </Link></li>
             <li><Link href='/' className='w-[82px] h-[32px] p-3 hover:text-[#DF3B11]' >
               <AiOutlineShoppingCart
@@ -65,7 +65,7 @@ const Nav = () => {
 
 
         {/* Desktop Menu */}
-        <div className={storenav ? 'hidden ' : 'hidden lg:flex items-center justify-between  w-full'} >
+        <div className={librarynav ? 'hidden ' : 'hidden lg:flex items-center justify-between  w-full'} >
           {/* left side */}
           <div className='container'>
 
@@ -73,7 +73,7 @@ const Nav = () => {
               <Link href='/Lessons' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Lessons</p>
               </Link>
-              <Link href='/Store' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
+              <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Store</p>
               </Link>
               <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>

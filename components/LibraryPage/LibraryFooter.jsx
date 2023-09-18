@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaTwitter, FaInstagram } from 'react-icons/fa'
 import { AiOutlineFacebook } from 'react-icons/ai'
-import RiTwitterXFill from 'react-icons/ri'
+
 
 const StoreFooter = () => {
     return (
