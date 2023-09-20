@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
 import Namechip from '@/public/images/Namechip.png'
 
-const Nav = () => {
+const LessonNav = () => {
   const [lessonnav, setLessonNav] = useState(false)
 
 
@@ -45,7 +45,7 @@ const Nav = () => {
           <ul className='flex flex-col w-full items-center  justify-center text-center'>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Home  </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/Lessons'> Lessons </Link></li>
-            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Store </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/Product'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Hub </Link></li>
             <li><Link href='/' className='w-[82px] h-[32px] p-3 hover:text-[#DF3B11]' >
               <AiOutlineShoppingCart
@@ -73,7 +73,7 @@ const Nav = () => {
               <Link href='/Lessons' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Lessons</p>
               </Link>
-              <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
+              <Link href='/Product' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
                 <p className='w-[62px] h-[32px] font-inter font-normal text-[18px] leading-[32px] text-center'>Store</p>
               </Link>
               <Link href='/' className='w-[82px] h-[32px] rounded-[5px] px-2 gap-[8px] hover:text-[#DF3B11]'>
@@ -114,4 +114,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default LessonNav

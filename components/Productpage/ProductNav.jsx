@@ -8,12 +8,12 @@ import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
 import Namechip from '@/public/images/Namechip.png'
 
-const LibraryNav = () => {
-  const [librarynav, setLibraryNav] = useState(false)
+const ProductNav = () => {
+  const [productnav, setProductNav] = useState(false)
 
 
   const handleNav = () => {
-    setLibraryNav(!librarynav);
+    setProductNav(!productnav);
   }
 
 
@@ -22,7 +22,7 @@ const LibraryNav = () => {
     <div className='absolute w-full h-[113px] text-white z-10'>
  
 
-      <div className={librarynav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
+      <div className={productnav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
         {/* nav logo */}
         <div className='ml-2  md:ml-6 lg:ml-[100px]'>
           <Link href='/' className='flex items-center ml-4'>
@@ -35,12 +35,12 @@ const LibraryNav = () => {
         </div>
         {/* Toggle button */}
         <div className='block lg:hidden items-center text-black'>
-          <Link href='/Library' >
-            {librarynav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-28 text-white hover:text-gray-200' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-white hover:text-gray-200' />}
+          <Link href='/Product' >
+            {productnav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-28 text-white hover:text-gray-200' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-white hover:text-gray-200' />}
           </Link>
         </div>
 
-        <div className={librarynav ? 'absolute text-black  flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#FBFBFB]' :
+        <div className={productnav ? 'absolute text-black  flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#FBFBFB]' :
           'absolute hidden'}>
           <ul className='flex flex-col w-full items-center  justify-center text-center'>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/'> Home </Link></li>
@@ -65,7 +65,7 @@ const LibraryNav = () => {
 
 
         {/* Desktop Menu */}
-        <div className={librarynav ? 'hidden ' : 'hidden lg:flex items-center justify-between  w-full'} >
+        <div className={productnav ? 'hidden ' : 'hidden lg:flex items-center justify-between  w-full'} >
           {/* left side */}
           <div className='container'>
 
@@ -114,4 +114,4 @@ const LibraryNav = () => {
   )
 }
 
-export default LibraryNav
+export default ProductNav
