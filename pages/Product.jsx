@@ -3,6 +3,7 @@ import Head from 'next/head'
 import ProductNav from '@/components/Productpage/ProductNav'
 import ProductHero from '@/components/Productpage/ProductHero'
 import ProductFooter from '@/components/Productpage/ProductFooter'
+import ProductDeals from '@/components/Productpage/ProductDeals'
 
 const Product = () => {
     return (
@@ -16,6 +17,7 @@ const Product = () => {
             <div className='w-full mx-auto'>
                 <ProductNav />
                 <ProductHero />
+                <ProductDeals />
                 <ProductFooter />
             </div>
         </>
