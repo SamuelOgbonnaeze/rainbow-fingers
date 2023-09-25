@@ -4,6 +4,7 @@ import ProductNav from '@/components/Productpage/ProductNav'
 import ProductHero from '@/components/Productpage/ProductHero'
 import ProductFooter from '@/components/Productpage/ProductFooter'
 import ProductDeals from '@/components/Productpage/ProductDeals'
+import ProductReview from '@/components/Productpage/ProductReview'
 
 const Product = () => {
     return (
@@ -18,6 +19,7 @@ const Product = () => {
                 <ProductNav />
                 <ProductHero />
                 <ProductDeals />
+                <ProductReview />
                 <ProductFooter />
             </div>
         </>
