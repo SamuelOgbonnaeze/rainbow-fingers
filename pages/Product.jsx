@@ -5,6 +5,7 @@ import ProductHero from '@/components/Productpage/ProductHero'
 import ProductFooter from '@/components/Productpage/ProductFooter'
 import ProductDeals from '@/components/Productpage/ProductDeals'
 import ProductReview from '@/components/Productpage/ProductReview'
+import ProductOffers from '@/components/Productpage/ProductOffers'
 
 const Product = () => {
     return (
@@ -19,6 +20,7 @@ const Product = () => {
                 <ProductNav />
                 <ProductHero />
                 <ProductDeals />
+                <ProductOffers />
                 <ProductReview />
                 <ProductFooter />
             </div>

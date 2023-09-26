@@ -24,7 +24,7 @@ const ProductReview = () => {
                 <Image src={Video_play} width={73} height={73} className=' w-[50px]  mx-auto items-center ' alt='Play button' />
               </span>
             </Link>
-            <div className='mt-[130px] md:mt-[170px] lg:mt-12 '>
+            <div className='mt-[130px] md:mt-[170px] lg:mt-[120px]   '>
               <p className='font-lato font-bold text-[20px] md:text-[24px] lg:text-[30px] leading-[20px] py-2 '>How To Learn Songs By Ear:</p>
               <p className='font-lato font-bold text-[12px] md:text-[14px] lg:text-[16px] leading-[12px] text-[#8F8F8F] py-2 '>Guitar theory, ear training & reading</p>
             </div>
@@ -38,7 +38,7 @@ const ProductReview = () => {
                 <Image src={Video_play} width={73} height={73} className=' w-[50px]  mx-auto items-center ' alt='Play button' />
               </span>
             </Link>
-            <div className='mt-[130px] md:mt-[170px] lg:mt-12 '>
+            <div className='mt-[130px] md:mt-[170px] lg:mt-[120px]   '>
               <p className='font-lato font-bold text-[20px] md:text-[24px] lg:text-[30px] leading-[20px] py-2 '>How To Learn Songs By Ear:</p>
               <p className='font-lato font-bold text-[12px] md:text-[14px] lg:text-[16px] leading-[12px] text-[#8F8F8F] py-2 '>Guitar theory, ear training & reading</p>
             </div>
@@ -52,7 +52,7 @@ const ProductReview = () => {
                 <Image src={Video_play} width={73} height={73} className=' w-[50px]  mx-auto items-center ' alt='Play button' />
               </span>
             </Link>
-           <div className='mt-[130px] md:mt-[170px] lg:mt-12 '>
+           <div className='mt-[130px] md:mt-[170px] lg:mt-[120px] '>
               <p className='font-lato font-bold text-[20px] md:text-[24px] lg:text-[30px] leading-[20px] py-2 '>How To Learn Songs By Ear:</p>
               <p className='font-lato font-bold text-[12px] md:text-[14px] lg:text-[16px] leading-[12px] text-[#8F8F8F] py-2 '>Guitar theory, ear training & reading</p>
             </div>
