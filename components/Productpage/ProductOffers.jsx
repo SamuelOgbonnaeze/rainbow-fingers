@@ -1,5 +1,6 @@
 import React from 'react'
 import OffersStaticLeft from './OffersStaticleft'
+import OffersStaticRight from './OffersStaticRight'
 
 
 const ProductOffers = () => {
@@ -12,12 +13,12 @@ const ProductOffers = () => {
             </div>
 
             {/* Offers */}
-            <div className=' w-[95%] h-[1740px] flex mt-[100px]  mx-auto gap-[25px] text-[#000000] '>
+            <div className=' w-[97%] lg:w-[95%] h-[1740px] flex mt-[100px]  mx-auto gap-[25px] text-[#000000] '>
                 {/* Left vertical side */}
-             <OffersStaticLeft />
+                <OffersStaticLeft />
                 {/* Right Vertical side */}
                 <div className='w-full '>
-                    d sgulk
+                    <OffersStaticRight />
                 </div>
                 {/*  */}
             </div>
