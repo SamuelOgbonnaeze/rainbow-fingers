@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Sample_1 from '@/public/images/sample-1.png'
 import Sample_2 from '@/public/images/sample-2.png'
 import Sample_3 from '@/public/images/sample-3.png'
@@ -20,15 +21,15 @@ const OffersStaticRight = () => {
                     className='  rounded-[25px] mx-auto lg:ml-[18px] w-[150px] md:w-[300px] lg:w-[274px] '
                 />
 
-                <p className=' md:w-[243px] h-[36px] mt-[15px] md:mt-[25px] lg:mt-[35px] ml-1 md:ml-[18px] font-nunito font-bold text-[12px] md:text-[16px] lg:text-[14px] leading-[17.92px] tracking--2'>{props.manufacturer} <br />
+                <p className=' md:w-[243px] h-[36px] mt-[10px] md:mt-[25px] lg:mt-[35px] ml-1 md:ml-2 lg:ml-[18px] font-nunito font-bold text-[10px] md:text-[16px] lg:text-[14px] leading-[17.92px] tracking--2'>{props.manufacturer} <br />
                     {props.name} ({props.productionyear})
                 </p>
 
-                <p className='md:w-[180px] h-[11px] ml-1 md:ml-[18px] mt-[20px] md:mt-[30px] lg:mt-[13px] font-nunito font-semibold leading-[9px] text-[12px] md:text-[16px] text-[#8F8F8F] '>{props.description}</p>
+                <p className='md:w-[180px] h-[11px] ml-1 md:ml-2 lg:ml-[18px] mt-[20px] md:mt-[30px] lg:mt-[13px] font-nunito font-semibold leading-[9px] text-[10px] md:text-[16px] text-[#8F8F8F] '>{props.description}</p>
 
                 <div className='flex  mt-[24px] items-center gap-2 justify-between'>
-                    <p className='w-[45%] md:w-[126px] h-[21px] ml-[5px] md:ml-[21px] font-nunito font-extrabold text-[16px] md:text-[28px] leading-[14.5px]'>{props.price}</p>
-                    <p className='w-[45%] lg:w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[18px] lg:text-[16px] leading-[9px] text-[#8F8F8F] md:mr-8'>{props.reviews} Reviews</p>
+                    <p className='w-[45%] md:w-[126px] h-[21px] ml-[5px] md:ml-2 lg:ml-[21px] font-nunito font-extrabold text-[12px] md:text-[20px] lg:text-[28px]  leading-[14.5px]'>₦{props.price}</p>
+                    <p className='w-[45%] lg:w-[85px] h-[12px] font-nunito font-semibold text-[8px] md:text-[14px] lg:text-[16px] leading-[9px] text-[#8F8F8F] md:mr-8'>{props.reviews} Reviews</p>
                 </div>
 
                 <hr className='mt-[21px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
@@ -42,14 +43,14 @@ const OffersStaticRight = () => {
                     />
 
                     <button className='w-[80%] md:w-[150px] md:h-[58px] md:mr-4 rounded-[50px] md:rounded-[60px] py-[12px] px-[18px] flex  md:flex-row gap-[8px] bg-[#E24F29] hover:bg-white text-white hover:text-[#E24F29] items-center hover:shadow-xl group'>
-                        <div className='mx-auto lg:ml-[-10px] mt-[-2px] md:mt-[-6px] lg:mt-0'>
+                        <div className='mx-auto lg:ml-[-10px] mt-[-2px] md:mt-[-6px] lg:mt-0 hidden md:flex '>
                             <IoIosAddCircleOutline
                                 size={18}
-                                className='text-white group-hover:text-[#E24F29] md:w-[24px] md:h-[24px]'
+                                className='text-white group-hover:text-[#E24F29] md:w-[24px] md:h-[24px] '
                             />
                         </div>
-                        <div className='w-[250px]'>
-                            <p className='font-nunito font-medium text-[10px] md:text-[16px] ml-[10px] leading-3 md:leading-[20.48px] -tracking-2 flex items-center text-center h-[20px] '>Add cart</p>
+                        <div className='w-full md:w-[250px] r'>
+                            <p className='font-nunito font-medium text-[10px] md:text-[16px] ml-[10px] leading-3 md:leading-[20.48px] -tracking-2  h-[20px] '>Add cart</p>
                         </div>
                     </button>
                 </div>
@@ -57,9 +58,9 @@ const OffersStaticRight = () => {
         );
     }
 
-  return (
-    <div>
-         <div className=' lg:h-[515px] grid grid-cols-2 lg:grid-cols-3 gap-[10px] px-2 justify-between mx-auto '>
+    return (
+        <div>
+            <div className=' grid grid-cols-2 lg:grid-cols-3 gap-[10px] px-2 justify-between mx-auto '>
                 {/* 1st Card */}
                 <Card
                     img={Sample_1}
@@ -150,10 +151,20 @@ const OffersStaticRight = () => {
                     price='150,000'
                     reviews='34'
                 />
-                
+
             </div>
-    </div>
-  )
+            <div className='w-full flex  '>
+                <Link href='/' className='w-[60%] md:w-[40%]  mx-auto'>
+                    <button className='mt-[30px] w-full rounded-[60px] bg-white border-solid border-[1px] border-[#363F5E] py-3 px-6 gap-3 hover:scale-105 '>
+                        <span className='font-nunito font-medium text-[12px] md:text-[16px] leading-[20px] text-[#242C3D] -tracking-[2%] ' >Show more
+                        </span>
+                    </button>
+                </Link>
+
+            </div>
+
+        </div>
+    )
 }
 
 export default OffersStaticRight

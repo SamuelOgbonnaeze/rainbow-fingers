@@ -1,16 +1,14 @@
  import React from 'react'
 
-
-
 const OffersStaticLeft = () => {
     return (
-        <div className='w-[290px] flex flex-col items-center '>
+        <div className='w-[150px] md:w-[290px] flex flex-col items-center '>
             {/* Instruments */}
-            <div className='w-full h-[300px] md:h-[360px] rounded-[16px]  bg-[#FAFAFA]  '>
+            <div className='w-full h-[250px] md:h-[360px] rounded-[16px]  bg-[#FAFAFA]  '>
                 <div className=' h-[76px] rounded-[16px] flex items-center bg-[#DDDEDF] border-solid border-[1px] border-[#DDDEDF]'>
-                    <p className='font-lato font-medium text-[14px] md:text-[16px] lg:text-[20px] leading-[16px] md:leading-[16px] lg:leading-[25px] mx-auto '>Instrument</p>
+                    <p className='font-lato font-medium text-[14px] md:text-[20px] leading-[16px] lg:leading-[25px] mx-auto '>Instrument</p>
                 </div>
-                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[8px] md:text-[12px] lg:text-[16px] leading-[25px]  lg:leading-[45px]  '>
+                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[10px] md:text-[16px] leading-[25px] md:leading-[45px]  '>
                     <span className='flex justify-between  '>
                         <p>Acoustic Guitar</p>
                         <p>(50)</p>
@@ -32,11 +30,11 @@ const OffersStaticLeft = () => {
             </div>
             {/*  */}
             {/* Product type */}
-            <div className='w-full h-[587px] mt-2 rounded-[16px]  bg-[#FAFAFA]  '>
-                <div className='w-  h-[76px] rounded-[16px] flex items-center bg-[#DDDEDF] border-solid border-[1px] border-[#DDDEDF]'>
-                    <p className='font-lato font-medium text-[14px] md:text-[16px] lg:text-[20px] leading-[16px] md:leading-[16px] lg:leading-[25px] mx-auto '>Product type</p>
+            <div className='w-full h-[400px] md:h-[587px] mt-2 rounded-[16px]  bg-[#FAFAFA]  '>
+                <div className='  h-[76px] rounded-[16px] flex items-center bg-[#DDDEDF] border-solid border-[1px] border-[#DDDEDF]'>
+                    <p className='font-lato font-medium text-[14px] md:text-[20px] leading-[16px] md:leading-[16px] lg:leading-[25px] mx-auto '>Product type</p>
                 </div>
-                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[8px] md:text-[12px] lg:text-[16px] leading-[25px] lg:leading-[45px] '>
+                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[10px] md:text-[16px] leading-[25px] md:leading-[45px] '>
                     <span className='flex justify-between '>
                         <p>Flat Top</p>
                         <p>(143)</p>
@@ -76,9 +74,9 @@ const OffersStaticLeft = () => {
             {/* Price */}
             <div className='w-full h-[330px] mt-2 rounded-[16px]  bg-[#FAFAFA]  '>
                 <div className='w-full  h-[76px] rounded-[16px] flex items-center bg-[#DDDEDF] border-solid border-[1px] border-[#DDDEDF]'>
-                    <p className='font-lato font-medium text-[14px] md:text-[16px] lg:text-[20px] leading-[16px] md:leading-[16px] lg:leading-[25px] mx-auto '>Price</p>
+                    <p className='font-lato font-medium text-[14px] md:text-[20px] leading-[16px] md:leading-[16px] lg:leading-[25px] mx-auto '>Price</p>
                 </div>
-                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[8px] md:text-[12px] lg:text-[16px] leading-[25px] lg:leading-[45px]  '>
+                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[10px] md:text-[16px] leading-[25px] md:leading-[45px] '>
                     <span className='flex justify-between  '>
                         <p>Under ₦50,000</p>
                         <p>(50)</p>
@@ -100,11 +98,11 @@ const OffersStaticLeft = () => {
             </div>
             {/*  */}
             {/* Brand */}
-            <div className='w-full h-[385px] mt-2 rounded-[16px]  bg-[#FAFAFA]  '>
+            <div className='w-full h-[305px] md:h-[385px] mt-2 rounded-[16px]  bg-[#FAFAFA]  '>
                 <div className='w-full  h-[76px] rounded-[16px] flex items-center bg-[#DDDEDF] border-solid border-[1px] border-[#DDDEDF]'>
-                    <p className='font-lato font-medium text-[14px] md:text-[16px] lg:text-[20px] leading-[16px] md:leading-[16px] lg:leading-[25px] mx-auto '>Brand</p>
+                    <p className='font-lato font-medium text-[14px] md:text-[20px] leading-[16px] md:leading-[16px] lg:leading-[25px] mx-auto '>Brand</p>
                 </div>
-                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[8px] md:text-[12px] lg:text-[16px] leading-[25px] lg:leading-[45px]  '>
+                <div className='w-[90%] flex flex-col mt-[30px] mx-auto font-nunito font-normal text-[10px] md:text-[16px] leading-[25px] md:leading-[45px] '>
                     <span className='flex justify-between  '>
                         <p>Angel</p>
                         <p>(50)</p>
