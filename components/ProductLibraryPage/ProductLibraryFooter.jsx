@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { FaTwitter, FaInstagram } from 'react-icons/fa'
 import { AiOutlineFacebook } from 'react-icons/ai'
 
-
-const ProductFooter = () => {
+const ProductLibraryFooter = () => {
     return (
-        <div className='w-full mt-[750px] lg:mt-[120px]  h-[420px]  bg-[#DF3B11] text-white pt-[65px] '>
+
+        <div className='w-full mt-[750px] lg:mt-[120px]  h-[420px]  bg-[#C35041] text-white pt-[65px] '>
             <div className='w-[90%] h-[60%] grid grid-cols-3 gap-6 mx-auto justify-between  '>
                 {/* 1st column */}
                 <div className='flex  flex-col   font-lato font-normal text-[16px] lg:text-[20px] leading-[20.5px] mx-auto justify-between'>
@@ -47,7 +47,8 @@ const ProductFooter = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 
-export default ProductFooter
+export default ProductLibraryFooter

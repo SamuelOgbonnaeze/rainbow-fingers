@@ -8,7 +8,7 @@ import Sample_4 from '@/public/images/sample-4.png'
 import Ratings from '@/public/images/rating.png'
 import { IoIosAddCircleOutline } from 'react-icons/io'
 
-const OffersStaticRight = () => {
+const ProductStaticRight = () => {
     function Card(props) {
         return (
             <div className=' border-solid border-[1px] border-[#E0E0E0] flex flex-col py-[10px] md:pt-[17px]  bg-[#F2F2F2] rounded-[16px] hover:shadow-xl hover:scale-105 ease-in-out duration-300 '>
@@ -153,18 +153,10 @@ const OffersStaticRight = () => {
                 />
 
             </div>
-            <div className='w-full flex  '>
-                <Link href='/ProductLibrary' className='w-[60%] md:w-[40%]  mx-auto'>
-                    <button className='mt-[30px] w-full rounded-[60px] bg-white border-solid border-[1px] border-[#363F5E] py-3 px-6 gap-3 hover:scale-105 '>
-                        <span className='font-nunito font-medium text-[12px] md:text-[16px] leading-[20px] text-[#242C3D] -tracking-[2%] ' >Show more
-                        </span>
-                    </button>
-                </Link>
-
-            </div>
+           
 
         </div>
     )
 }
 
-export default OffersStaticRight
+export default ProductStaticRight
