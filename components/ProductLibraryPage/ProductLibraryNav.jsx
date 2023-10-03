@@ -19,7 +19,7 @@ const ProductLibraryNav = () => {
 
 
     return (
-        <div className=' w-full h-[113px] text-white'>
+        <div className=' w-full h-[113px] text-[#040D14]'>
 
 
             <div className={productLibraryNav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
@@ -35,8 +35,8 @@ const ProductLibraryNav = () => {
                 </div>
                 {/* Toggle button */}
                 <div className='block lg:hidden items-center text-black'>
-                    <Link href='/Product' >
-                        {productLibraryNav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-28 text-white hover:text-gray-200' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-white hover:text-gray-200' />}
+                    <Link href='/ProductLibrary' >
+                        {productLibraryNav ? <AiOutlineClose onClick={handleNav} size={20} className='z-20 mr-28 text-[#040D14] hover:text-black-200' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-[#040D14] hover:text-black-200' />}
                     </Link>
                 </div>
 
