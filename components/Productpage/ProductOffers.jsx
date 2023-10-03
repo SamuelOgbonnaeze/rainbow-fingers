@@ -1,6 +1,6 @@
 import React from 'react'
-import OffersStaticLeft from './OffersStaticleft'
-import OffersStaticRight from './OffersStaticRight'
+import OffersStaticLeft from '@/components/Productpage/OffersStaticLeft'
+import OffersStaticRight from '@/components/Productpage/OffersStaticRight'
 
 
 const ProductOffers = () => {
