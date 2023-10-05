@@ -19,8 +19,8 @@ const Experience = () => {
                 <p className='text-[#000000] leading-[20.5px] md:leading-[30.5px] text-[15px] md:text-[20px] font-normal'>From guitars and accessories to expert guitar classes, we're passionate about helping you achieve your musical goals.</p>
             </div>
             {/* Cards */}
-            <div className='w-[90%] mx-auto md:px-8 md:h-[900px] lg:h-[300px]  mt-[103px] flex justify-center  '>
-                <div className='  grid grid-rows-3 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8'>
+            <div className='w-full md:px-8 md:h-[900px] lg:h-[300px]  mt-[103px] flex justify-center  '>
+                <div className='w-[90%] mx-auto grid grid-rows-3 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8'>
                     {/* 1st Card */}
                     <div className='w-[287px] h-[284px] flex flex-col mx-auto'>
                         <Image

@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import { AiOutlineClose, AiOutlineMenu,AiOutlineShoppingCart } from 'react-icons/ai'
-import {FiShoppingCart} from 'react-icons/fi'
+import { AiOutlineClose, AiOutlineMenu, AiOutlineShoppingCart } from 'react-icons/ai'
+import { FiShoppingCart } from 'react-icons/fi'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
@@ -18,13 +18,13 @@ const Nav = () => {
 
   }
 
-  
+
 
   return (
     <div className='absolute w-full h-[113px]'>
 
 
-      <div className={nav ? ' h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
+      <div className={nav ? 'w-full h-full mx-auto flex items-center justify-between' : ' w-full h-full items-center justify-between flex'}>
         {/* nav logo */}
         <div className='ml-2  md:ml-6 lg:ml-[100px]'>
           <Link href='/' className='flex items-center ml-4'>
@@ -38,25 +38,25 @@ const Nav = () => {
         {/* Toggle button */}
         <div className='block lg:hidden items-center text-[#FBFBFB]'>
           <Link href='/' >
-            {nav ? <AiOutlineClose onClick={handleNav} size={20} className=' mr-28 text-[#600000] md:text-gray-100 '/> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-[#600000] md:text-gray-100' />}
+            {nav ? <AiOutlineClose onClick={handleNav} size={20} className=' mr-28 text-[#600000] md:text-gray-100 ' /> : <AiOutlineMenu onClick={handleNav} size={20} className='mr-16 text-[#600000] md:text-gray-100' />}
           </Link>
         </div>
 
         <div className={nav ? 'absolute text-gray-200 flex lg:hidden z-10 right-0 top-[0px] h-screen bg-[#600000]' :
-            'absolute hidden'}>
+          'absolute hidden'}>
           <ul className='flex flex-col w-full items-center mt-40 lg:justify-center text-center'>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/Lessons'> Lessons </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/Product'> Store </Link></li>
             <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/'> Hub </Link></li>
             <li><Link href='/' className='w-[82px] h-[32px] p-3' >
-                <AiOutlineShoppingCart
-                  size={24}
-                  width={24}
-                  height={24}
-                  className='text-gray-200'
-                />
-              </Link></li>
-           
+              <AiOutlineShoppingCart
+                size={24}
+                width={24}
+                height={24}
+                className='text-gray-200'
+              />
+            </Link></li>
+
           </ul>
         </div>
 

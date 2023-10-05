@@ -9,6 +9,52 @@ import Ratings from '../public/images/rating.png'
 import { IoIosAddCircleOutline } from 'react-icons/io'
 
 const Learn = () => {
+    function Card(props) {
+        return (
+            <div className=' h-[504px] rounded-[16px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#FBFBFB] hover:shadow-xl'>
+
+                <Image
+                    src={props.Image}
+                    width={258}
+                    height={250}
+                    alt={props.Alttext}
+                    className=' rounded-[25px] mx-auto md:ml-[18px] w-[150px] md:w-[274px]'
+                />
+
+                <p className='w-[80%] h-[21px] ml-2 md:ml-[18px] font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[17.92px] tracking--2 mt-[24px] text-[#050304]'>{props.Topic}
+                </p>
+                <p className='w-[70%] h-[13px] ml-2 md:ml-[18px] mt-[13px]  leading-[9px] md:leading-[13px] text-[11px] md:text-[14px] text-[#8F8F8F] font-nunito font-normal '>{props.Description}</p>
+                <p className='w-[30%] ml-2 md:ml-[18px] font-nunito font-extrabold text-[16px] md:text-[28px] leading-[14.5px] mt-6  text-[#050304]'>₦{props.Price}</p>
+
+                <hr className='mt-[23px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
+
+                <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between'>
+                    <div className='flex flex-col w-[40%] h-[48px] mt-[1px]'>
+                        <Image
+                            src={Ratings}
+                            height={20.47}
+                            className=' w-[70%] md:w-[60%] '
+                        />
+                        <p className=' mt-[15px] w-[90%] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F]'>{props.ReviewNumber} Reviews</p>
+                    </div>
+                    <button className='w-[55%] h-[58px] mr-1 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-1 border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
+                        <div className='mx-auto lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
+                            <IoIosAddCircleOutline
+                                size={18}
+                                className=''
+                            />
+                        </div>
+                        <div className='w-[120%] md:w-[100%]'>
+                            <p className='font-nunito font-medium text-[12px] md:text-[15px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] '>Add cart</p>
+                        </div>
+                    </button>
+
+                </div>
+
+            </div>
+        )
+    }
+
     return (
         <div>
             {/* Learn Heading */}
@@ -50,191 +96,41 @@ const Learn = () => {
                         className='rounded-[16px] lg:w-[65px] lg:h-[65px] ' />
                 </div> */}
                 {/* 1st Card */}
-                <div className=' h-[504px] rounded-[16px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#FBFBFB] hover:shadow-xl'>
-
-                    <Image
-                        src={Learn_1}
-                        width={258}
-                        height={250}
-                        alt='sample_1 image'
-                        className=' rounded-[25px] mx-auto md:ml-[18px] w-[150px] md:w-[274px]'
-                    />
-
-                    <p className='w-[213px] h-[21px] ml-2 md:ml-[18px] font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[17.92px] tracking--2      mt-[24px] text-[#050304]'>Guitar Fundamentals 1
-                    </p>
-
-                    <p className='w-[180px] md:w-[225px] h-[13px] ml-2 md:ml-6 mt-[13px]  leading-[9px] md:leading-[13px] text-[11px] md:text-[14px] text-[#8F8F8F] font-nunito font-normal '>White customised guitar</p>
-
-
-                    <p className='w-[126px] h-[21px] ml-5 md:ml-[27px] font-nunito font-extrabold text-[16px] md:text-[28px] leading-[14.5px] mt-6  text-[#050304]'>₦150,500</p>
-
-                    <hr className='mt-[23px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                    <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between'>
-                        <div className='flex flex-col w-[116.03px] h-[47.47px] mt-[1px]'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className=' mt-[15px] w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
-                        </div>
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                            <div className='mx-auto lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                <IoIosAddCircleOutline
-                                    size={18}
-                                    className=''
-                                />
-                            </div>
-                            <div className='w-[250px]'>
-                                <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] '>Add cart</p>
-                            </div>
-                        </button>
-                    </div>
-
-                </div>
+                <Card
+                    Image={Learn_1}
+                    Alttext='Learn_1 Image'
+                    Topic='Guitar Fundamentals 1'
+                    Description='White customised guitar'
+                    Price='150,000'
+                    ReviewNumber='38'
+                />
                 {/* 2nd Card */}
-                <div className=' h-[504px] rounded-[16px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#FBFBFB] hover:shadow-xl'>
-
-                    <Image
-                        src={Learn_2}
-                        width={258}
-                        height={250}
-                        alt='sample_2 image'
-                        className=' rounded-[25px] mx-auto md:ml-[18px] w-[150px] md:w-[274px]'
-                    />
-
-                    <p className='w-[213px] h-[21px] ml-2 md:ml-[18px] font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[17.92px] tracking--2      mt-[24px] text-[#050304]'>Guitar Fundamentals 1
-                    </p>
-
-                    <p className='w-[180px] md:w-[225px] h-[13px] ml-2 md:ml-6 mt-[13px]  leading-[9px] md:leading-[13px] text-[11px] md:text-[14px] text-[#8F8F8F] font-nunito font-normal '>White customised guitar</p>
-
-
-                    <p className='w-[126px] h-[21px] ml-5 md:ml-[27px] font-nunito font-extrabold text-[16px] md:text-[28px] leading-[14.5px] mt-6  text-[#050304]'>₦150,500</p>
-
-                    <hr className='mt-[23px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                    <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between'>
-                        <div className='flex flex-col w-[116.03px] h-[47.47px] mt-[1px]'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className=' mt-[15px] w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
-                        </div>
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                            <div className='mx-auto lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                <IoIosAddCircleOutline
-                                    size={18}
-                                    className=''
-                                />
-                            </div>
-                            <div className='w-[250px]'>
-                                <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] '>Add cart</p>
-                            </div>
-                        </button>
-
-                    </div>
-
-                </div>
+                <Card
+                    Image={Learn_2}
+                    Alttext='Learn_2 Image'
+                    Topic='Guitar Fundamentals 1'
+                    Description='White customised guitar'
+                    Price='100,000'
+                    ReviewNumber='18'
+                />
                 {/* 3rd Card */}
-                <div className=' h-[504px] rounded-[16px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#FBFBFB] hover:shadow-xl'>
-
-                    <Image
-                        src={Learn_3}
-                        width={258}
-                        height={250}
-                        alt='sample_3 image'
-                        className=' rounded-[25px] mx-auto md:ml-[18px] w-[150px] md:w-[274px]'
-                    />
-
-                    <p className='w-[213px] h-[21px] ml-2 md:ml-[18px] font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[17.92px] tracking--2      mt-[24px] text-[#050304]'>Guitar Fundamentals 1
-                    </p>
-
-                    <p className='w-[180px] md:w-[225px] h-[13px] ml-2 md:ml-6 mt-[13px]  leading-[9px] md:leading-[13px] text-[11px] md:text-[14px] text-[#8F8F8F] font-nunito font-normal '>White customised guitar</p>
-
-
-                    <p className='w-[126px] h-[21px] ml-5 md:ml-[27px] font-nunito font-extrabold text-[16px] md:text-[28px] leading-[14.5px] mt-6  text-[#050304]'>₦150,500</p>
-
-                    <hr className='mt-[23px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                    <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between'>
-                        <div className='flex flex-col w-[116.03px] h-[47.47px] mt-[1px]'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className=' mt-[15px] w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
-                        </div>
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                            <div className='mx-auto lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                <IoIosAddCircleOutline
-                                    size={18}
-                                    className=''
-                                />
-                            </div>
-                            <div className='w-[250px]'>
-                                <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] '>Add cart</p>
-                            </div>
-                        </button>
-
-                    </div>
-
-                </div>
+                <Card
+                    Image={Learn_3}
+                    Alttext='Learn_3 Image'
+                    Topic='Guitar Fundamentals 1'
+                    Description='White customised guitar'
+                    Price='120,000'
+                    ReviewNumber='25'
+                />
                 {/* 4th Card */}
-                <div className=' h-[504px] rounded-[16px] border-solid border-[1px] border-[#E0E0E0] flex flex-col pt-[17px] bg-[#FBFBFB] hover:shadow-xl'>
-
-                    <Image
-                        src={Learn_4}
-                        width={258}
-                        height={250}
-                        alt='sample_4 image'
-                        className=' rounded-[25px] mx-auto md:ml-[18px] w-[150px] md:w-[274px]'
-                    />
-
-                    <p className='w-[213px] h-[21px] ml-2 md:ml-[18px] font-nunito font-bold text-[12px] md:text-[16px] lg:text-[20px] leading-[17.92px] tracking--2      mt-[24px] text-[#050304]'>Guitar Fundamentals 1
-                    </p>
-
-                    <p className='w-[180px] md:w-[225px] h-[13px] ml-2 md:ml-6 mt-[13px]  leading-[9px] md:leading-[13px] text-[11px] md:text-[14px] text-[#8F8F8F] font-nunito font-normal '>White customised guitar</p>
-
-
-                    <p className='w-[126px] h-[21px] ml-5 md:ml-[27px] font-nunito font-extrabold text-[16px] md:text-[28px] leading-[14.5px] mt-6  text-[#050304]'>₦150,500</p>
-
-                    <hr className='mt-[23px] w-full ml-[1px] border-solid border-[1px] border-[#E0E0E0]'></hr>
-
-
-                    <div className='mt-[21px] flex items-center w-full h-[48.47px] px-2 justify-between'>
-                        <div className='flex flex-col w-[116.03px] h-[47.47px] mt-[1px]'>
-                            <Image
-                                src={Ratings}
-                                height={20.47}
-                                className=' w-[70px] md:w-[116px] '
-                            />
-                            <p className=' mt-[15px] w-[85px] h-[12px] font-nunito font-semibold text-[10px] md:text-[16px] leading-[9px] text-[#8F8F8F]'>34 Reviews</p>
-                        </div>
-                        <button className='w-[90px] md:w-[150px] h-[58px] mr-4 rounded-[60px] py-[12px] px-[24px] flex flex-col lg:flex-row gap-[8px] border-solid border-[1px] border-[#363F5E] items-center bg-[#FFFFFF]  text-[#242C3D] hover:shadow-xl'>
-                            <div className='mx-auto lg:ml-[-18px] mt-[-8px] md:mt-[-6px] lg:mt-0'>
-                                <IoIosAddCircleOutline
-                                    size={18}
-                                    className=''
-                                />
-                            </div>
-                            <div className='w-[250px]'>
-                                <p className='font-nunito font-medium text-[12px] md:text-[15px] ml-[10px] leading-3 md:leading-[20px] -tracking-2 text-center h-[20px] '>Add cart</p>
-                            </div>
-                        </button>
-
-
-                        
-
-                    </div>
-
-                </div>
+                <Card
+                    Image={Learn_4}
+                    Alttext='Learn_4 Image'
+                    Topic='Guitar Fundamentals 1'
+                    Description='White customised guitar'
+                    Price='150,000'
+                    ReviewNumber='12'
+                />
             </div>
 
         </div>
