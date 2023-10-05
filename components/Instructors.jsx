@@ -15,7 +15,7 @@ const Instructors = () => {
                     {/* Left side */}
                     <div className='w-full lg:w-[50%] flex flex-col ' >
                         <div className='w-[80%] mx-auto lg:mx-0'>
-                            <p className='w-full font-nunito font-light text-3xl md:text-4xl lg:text-[64px] leading-6 md:leading-[32px] lg:leading-[52.5px] text-[#050304] text-center'>Meet our <span className=' font-medium text-[#E24F29]'>instructors</span></p>
+                            <p className='w-full font-nunito font-light text-3xl md:text-4xl lg:text-[64px] leading-6 md:leading-[32px] lg:leading-[52.5px] text-[#050304] text-center '>Meet our <span className=' font-medium text-[#E24F29]'>instructors</span></p>
                         </div>
                         <div className=' mt-[30px] lg:mt-[60px] w-[80%] md:w-[50%] lg:w-[90%] h-[28px] mx-auto lg:mx-0'>
                             <p className='w-full h-[65px] lg:ml-[5px] font-nunito font-normal text-[14px]  md:text-[16px] lg:text-[18px] leading-[30.5px] text-[#050304] text-center'>Our experienced instructors can help you learn the basics, refine your skills, or even prepare for a performance or recording session.</p>
@@ -35,7 +35,7 @@ const Instructors = () => {
                 </div>
 
                 {/* The instructors card */}
-                <div className='w-full lg:w-[95%] grid grid-cols-2 lg:grid-cols-4 justify-between gap-[10px]  lg:mx-auto mt-[85px] lg:mt-[65px]'>
+                <div className='w-full lg:w-[95%] grid grid-cols-2 lg:grid-cols-4 justify-between gap-[10px]  lg:mx-auto mt-[85px] lg:mt-[65px] bg-[#FBFBFB] '>
                     {/* 1st card  */}
                     <div className=' lg:h-[534px] '>
                         <Image
@@ -53,7 +53,7 @@ const Instructors = () => {
                             width={269}
                             height={525}
                             alt='Instructor_2.png'
-                            className='rounded-[25px]'
+                            className='rounded-[25px] w-full '
                         />
                     </div>
                     {/* 3rd card */}

@@ -10,19 +10,19 @@ const Experience = () => {
         <div className='justify-center'>
             {/* Heading */}
             <div className='mt-[70px] md:mt-[100px] lg:mt-[231px] w-full h-[200px] mx-auto opacity-500 '>
-                <div className='pt-[33px] w-[70%] h-134px mx-auto text-3xl md:text-5xl lg:text-[64px] leading-10 md:leading-[57px] lg:leading-[77px] text-center'>
+                <div className='pt-[33px] w-[80%] h-134px mx-auto text-3xl md:text-5xl lg:text-[64px] leading-10 md:leading-[57px] lg:leading-[77px] text-center'>
                     <p className='font-light font-nunito'>Experience the Power of Music with <span className='font-medium text-[#D2AE00]'>Rainbow Fingers</span></p>
                 </div>
             </div>
             {/* paragraph text */}
-            <div className='md:mt-[51px] w-[65%] h-[57px] mx-auto text-center'>
+            <div className='md:mt-[51px] w-[75%] h-[57px] mx-auto text-center'>
                 <p className='text-[#000000] leading-[20.5px] md:leading-[30.5px] text-[15px] md:text-[20px] font-normal'>From guitars and accessories to expert guitar classes, we're passionate about helping you achieve your musical goals.</p>
             </div>
             {/* Cards */}
-            <div className='w-full md:px-8 md:h-[900px] lg:h-[300px]  mt-[103px] flex justify-center  '>
+            <div className='w-full mx-auto md:h-[900px] lg:h-[300px]  mt-[103px] flex justify-center  '>
                 <div className='w-[90%] mx-auto grid grid-rows-3 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8'>
                     {/* 1st Card */}
-                    <div className='w-[287px] h-[284px] flex flex-col mx-auto'>
+                    <div className='w-[100%] h-[284px] flex flex-col mx-auto'>
                         <Image
                             src={Store}
                             width={76.75}
@@ -31,34 +31,34 @@ const Experience = () => {
                             className='mx-auto'
                         />
 
-                        <p className='mt-[47px] font-bold font-nunito text-[18px] md:text-[20px] lg:text-[24px] leading-[17.5px]  text-[#050304]'>Store Guitar/ Accessories</p>
-                        <p className='w-[273px] h-[122px] mt-[24px] text-[14px] md:text-[16px] lg:text-[18px] leading-[26.5px] text-[#2F3437]'>Rainbow fingers is a standard, licensed, accredited and well equipped music school. We run a music school online and offline where kids, teens, and adults.</p>
+                        <p className='w-[90%] mx-auto mt-[47px] font-bold font-nunito text-[18px] md:text-[20px] lg:text-[24px] leading-[17.5px]  text-[#050304]'>Store Guitar/ Accessories</p>
+                        <p className='w-[90%] mx-auto h-[122px] mt-[24px] text-[14px] md:text-[16px] lg:text-[18px] leading-[26.5px] text-[#2F3437]'>Rainbow fingers is a standard, licensed, accredited and well equipped music school. We run a music school online and offline where kids, teens, and adults.</p>
                     </div>
                     {/* 2nd card */}
-                    <div className='w-[287px] h-[284px] flex flex-col mx-auto'>
+                    <div className='w-[100%] h-[284px] flex flex-col mx-auto'>
                         <Image
                             src={TutorialVideo}
-                            width={82.24}
-                            height={73.41}
-                            alt='tutorial video icon'
+                            width={76.75}
+                            height={73}
+                            alt='store icon'
                             className='mx-auto'
                         />
 
-                        <p className='mt-[47px] font-bold font-nunito text-[18px] md:text-[20px] lg:text-[24px] leading-[12.5px] text-[#050304]'>Tutorial videos</p>
-                        <p className='w-[273px] h-[122px] mt-[24px] text-[14px] md:text-[16px] lg:text-[18px] leading-[26.5px] text-[#2F3437]'>Rainbow fingers is a standard, licensed, accredited and well equipped music school. We run a music school online and offline where kids, teens, and adults.</p>
+                        <p className='w-[90%] mx-auto mt-[47px] font-bold font-nunito text-[18px] md:text-[20px] lg:text-[24px] leading-[17.5px]  text-[#050304]'>Tutorial videos</p>
+                        <p className='w-[90%] mx-auto h-[122px] mt-[24px] text-[14px] md:text-[16px] lg:text-[18px] leading-[26.5px] text-[#2F3437]'>Rainbow fingers is a standard, licensed, accredited and well equipped music school. We run a music school online and offline where kids, teens, and adults.</p>
                     </div>
                     {/* 3rd Card */}
-                    <div className='w-[287px] h-[284px] flex flex-col mx-auto '>
+                    <div className='w-[100%] h-[284px] flex flex-col mx-auto'>
                         <Image
                             src={CommunityRating}
-                            width={98.79}
-                            height={74.77}
-                            alt='community ratings icon'
+                            width={76.75}
+                            height={73}
+                            alt='store icon'
                             className='mx-auto'
                         />
 
-                        <p className='mt-[47px] font-bold font-nunito text-[18px] md:text-[20px] lg:text-[24px] leading-[14.5px] text-[#050304] '>Community reviews</p>
-                        <p className='w-[273px] h-[122px] mt-[24px] text-[14px] md:text-[16px] lg:text-[18px] leading-[26.5px] text-[#2F3437]'>Rainbow fingers is a standard, licensed, accredited and well equipped music school. We run a music school online and offline where kids, teens, and adults.</p>
+                        <p className='w-[90%] mx-auto mt-[47px] font-bold font-nunito text-[18px] md:text-[20px] lg:text-[24px] leading-[17.5px]  text-[#050304]'>Community reviews</p>
+                        <p className='w-[90%] mx-auto h-[122px] mt-[24px] text-[14px] md:text-[16px] lg:text-[18px] leading-[26.5px] text-[#2F3437]'>Rainbow fingers is a standard, licensed, accredited and well equipped music school. We run a music school online and offline where kids, teens, and adults.</p>
                     </div>
                 </div>
             </div>
