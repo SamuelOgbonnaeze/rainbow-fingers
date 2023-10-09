@@ -55,6 +55,7 @@ const LessonNav = () => {
                 className=''
               />
             </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3 hover:text-[#DF3B11]'><Link href='/login'> Login </Link></li>
 
           </ul>
         </div>
