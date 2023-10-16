@@ -27,16 +27,16 @@ const Login = () => {
         <div className=' w-full h-screen md:w-1/2  '>
           <Link href='/'>
             <nav className='mt-3 md:mt-6' >
-              <img src="images/logo.png" alt="Rainbow Fingers logo" className=' ' />
+              <img src="../images/logo.png" alt="Rainbow Fingers logo" className=' ' />
             </nav>
           </Link>
           <div className='flex justify-center'>
-            <div className='bg-green-900/10 md:bg-transparent px-2 md:px-8 py-4 md:py-16 self-center mt-[10%] w-4/5 lg:w-3/5  lg:max-w-md rounded-md '>
+            <div className='bg-green-900/10 md:bg-transparent px-2 md:px-8 py-4 md:py-12 self-center mt-[10%] md:mt-[5%] w-4/5 lg:w-3/5  lg:max-w-md rounded-md '>
               <h2 className='text-3xl md:text-4xl  md:mb-4 font-nunito font-bold' >
                 Login
               </h2>
 
-              <div className='flex flex-col gap-4 mt-12 md:mt-12'>
+              <div className='flex flex-col gap-4 mt-6 md:mt-9'>
 
                 <Input
                   label='Email Address'
@@ -55,9 +55,9 @@ const Login = () => {
               <button className="bg-[#DF3B11] py-2 md:py-4 text-white rounded-full w-full mt-8 hover:bg-opacity-80 transition font-nunito font-medium ">
                 Continue
               </button>
-              <div className='mt-4 flex items-center justify-between '>
+              <div className='mt-4 flex items-center justify-between text-[#6B6B6B] '>
                 <hr className="w-[43%] " />
-                <p className="font-hanken font-medium text-xl text-white md:text-[#6B6B6B]" >Or</p>
+                <p className="font-hanken font-medium text-xl text-[#6B6B6B]" >Or</p>
                 <hr className="w-[43%] " />
               </div>
               <button className="border-solid border-[1px] border-[#DF3B11] py-2 md:py-4 text-white md:text-[#DF3B11] rounded-full w-full mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#DF3B11] md:bg-transparent  ">
@@ -78,13 +78,14 @@ const Login = () => {
               </button>
               <div className=' mt-8 md:mt-20 flex flex-col items-center '>
                 <p className="text-white/80 md:text-[#6B6B6B] font-nunito font-medium text-[16px] md:text-xl leading-[20px]">
-                   Don't have an account?
+                  Don't have an account? 
+                  <Link href='/auth/sign_up'>
+                    <span className=" text-[#DF3B11] font-nunito font-medium ml-2 text-[16px] md:text-xl leading-[20px] hover:underline cursor-pointer mt-2 ">
+                      Sign up here
+                    </span>
+                  </Link>
                 </p>
-                <Link href='/sign_up'>
-                  <p className=" text-[#DF3B11] font-nunito font-medium text-[16px] md:text-xl leading-[20px] hover:underline cursor-pointer mt-2 " >
-                  Sign up here 
-                  </p>
-                </Link>
+
               </div>
 
             </div>

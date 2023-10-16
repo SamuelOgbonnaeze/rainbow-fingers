@@ -27,17 +27,17 @@ const sign_up = () => {
                 {/* Right side */}
                 <div className=' w-full h-screen md:w-1/2  '>
                     <Link href='/'>
-                        <nav className='mt-3 md:mt-6' >
-                            <img src="images/logo.png" alt="Rainbow Fingers logo" className=' ' />
+                        <nav className='mt-2 md:mt-6' >
+                            <img src="../images/logo.png" alt="Rainbow Fingers logo" className='bg-white/80 md:bg-transparent ' />
                         </nav>
                     </Link>
                     <div className='flex justify-center'>
-                        <div className='bg-white/70 md:bg-transparent px-2 md:px-8 py-4 md:py-16 self-center mt-[10%] lg:mt-[5%] w-4/5 lg:w-3/5  lg:max-w-md rounded-md '>
+                        <div className='bg-white/70 md:bg-transparent px-2 md:px-8 py-4 md:py-12 self-center mt-[10%] lg:mt-[4%] w-4/5 lg:w-3/5  lg:max-w-md rounded-md '>
                             <h2 className='text-3xl md:text-4xl  md:mb-4 font-nunito font-bold text-gray-900 md:text-black ' >
                                 Create an account
                             </h2>
 
-                            <div className='flex flex-col gap-4 mt-12'>
+                            <div className='flex flex-col gap-4 mt-6 md:mt-9'>
                                 <Input
                                     label="Username"
                                     onChange={(ev: any) => setName(ev.target.value)}
@@ -58,15 +58,15 @@ const sign_up = () => {
                                     value={password}
                                 />
                             </div>
-                            <button className="bg-[#DF3B11] py-2 md:py-4 text-white rounded-full w-full mt-8 hover:bg-opacity-80 transition font-nunito font-medium ">
+                            <button className="bg-[#DF3B11] py-2 md:py-4 text-white rounded-full w-full mt-3 md:mt-8 hover:bg-opacity-80 transition font-nunito font-medium ">
                                 Sign up
                             </button>
-                            <div className='mt-4 flex items-center justify-between text-[#6B6B6B]'>
+                            <div className='mt-2 md:mt-4 flex items-center justify-between text-[#6B6B6B]'>
                                 <hr className="w-[43%] " />
                                 <p className="font-hanken font-medium text-xl " >Or</p>
                                 <hr className="w-[43%] " />
                             </div>
-                            <button className="border-solid border-[1px] border-[#DF3B11] py-2 md:py-4 text-white md:text-[#DF3B11] rounded-full w-full mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#DF3B11] md:bg-transparent  ">
+                            <button className="border-solid border-[1px] border-[#DF3B11] py-2 md:py-4 text-white md:text-[#DF3B11] rounded-full w-full mt-3 md:mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#DF3B11] md:bg-transparent  ">
                                 <span className='mx-auto flex gap-4 '>
                                     <IoLogoGoogle
                                         size={24}
@@ -74,7 +74,7 @@ const sign_up = () => {
                                     Sign up with Google
                                 </span>
                             </button>
-                            <button className="border-solid border-[1px] border-[#292D32] py-2 md:py-4 text-white md:text-[#292D32] rounded-full w-full mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#292D32] md:bg-transparent  ">
+                            <button className="border-solid border-[1px] border-[#292D32] py-2 md:py-4 text-white md:text-[#292D32] rounded-full w-full mt-3 md:mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#292D32] md:bg-transparent  ">
                                 <span className='mx-auto flex gap-4 '>
                                     <IoLogoApple
                                         size={24}
@@ -82,15 +82,16 @@ const sign_up = () => {
                                     Sign up with Apple
                                 </span>
                             </button>
-                            <div className=' mt-8 md:mt-20 flex flex-col items-center '>
-                                <p className= " text-black md:text-[#6B6B6B] font-nunito font-medium text-[16px] md:text-xl leading-[20px]">
+                            <div className=' mt-8 md:mt-16 flex flex-col items-center '>
+                                <p className=" text-black md:text-[#6B6B6B] font-nunito font-medium text-[16px] md:text-xl leading-[20px]">
                                     Already have an account?
+                                    <Link href='/auth/login'>
+                                        <span className="text-[#6B6B6B] md:text-[#DF3B11] ml-2 font-nunito font-medium text-[16px] md:text-xl leading-[20px] hover:underline cursor-pointer mt-2 ">
+                                            Sign in to an existing account
+                                        </span>
+                                    </Link>
                                 </p>
-                                <Link href='/login'>
-                                    <p className=" text-[#DF3B11] font-nunito font-medium text-[16px] md:text-xl leading-[20px] hover:underline cursor-pointer mt-2 " >
-                                        Sign in to an existing account
-                                    </p>
-                                </Link>
+
                             </div>
 
                         </div>
