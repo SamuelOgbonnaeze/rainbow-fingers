@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
+import axios from 'axios'
 import Head from 'next/head'
 import Link from 'next/link'
 import Input from '@/components/Auth/input'
@@ -8,6 +9,17 @@ const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  const register= useCallback(async ()=>{
+try {
+await axios.post('/api/register', {
+  email,
+  name,
+  password
+})
+} catch (error){
+  console.log(error)
+}
+  },[])
 
   return (
     <>
@@ -19,19 +31,19 @@ const Login = () => {
       </Head>
 
 
-      <div className='w-full h-screen  flex '>
+      <div className='w-full h-full  flex '>
         {/* Left side */}
-        <div className=' h-full w-full md:w-1/2  bg-[url("/images/sign_image.png")] bg-no-repeat bg-center bg-cover absolute md:relative -z-10 md:z-0 '>
+        <div className=' w-full md:w-1/2  bg-[url("/images/sign_image.png")] bg-no-repeat bg-center bg-cover absolute md:relative -z-10 md:z-0 '>
         </div>
         {/* Right side */}
         <div className=' w-full h-screen md:w-1/2  '>
           <Link href='/'>
-            <nav className='mt-3 md:mt-6' >
+            <nav className='mt-3 md:mt-2 ' >
               <img src="../images/logo.png" alt="Rainbow Fingers logo" className=' ' />
             </nav>
           </Link>
           <div className='flex justify-center'>
-            <div className='bg-green-900/10 md:bg-transparent px-2 md:px-8 py-4 md:py-12 self-center mt-[10%] md:mt-[5%] w-4/5 lg:w-3/5  lg:max-w-md rounded-md '>
+            <div className='bg-green-900/10 md:bg-transparent px-2 md:px-8 py-4 md:py-10 self-center mt-[10%] md:mt-[5%] w-4/5 lg:w-3/5  lg:max-w-md rounded-md '>
               <h2 className='text-3xl md:text-4xl  md:mb-4 font-nunito font-bold' >
                 Login
               </h2>
@@ -52,15 +64,15 @@ const Login = () => {
                   value={password}
                 />
               </div>
-              <button className="bg-[#DF3B11] py-2 md:py-4 text-white rounded-full w-full mt-8 hover:bg-opacity-80 transition font-nunito font-medium ">
+              <button className="bg-[#DF3B11] py-2 md:py-3 text-white rounded-full w-full mt-6 hover:bg-opacity-80 transition font-nunito font-medium ">
                 Continue
               </button>
-              <div className='mt-4 flex items-center justify-between text-[#6B6B6B] '>
+              <div className='mt-3 flex items-center justify-between text-[#6B6B6B] '>
                 <hr className="w-[43%] " />
                 <p className="font-hanken font-medium text-xl text-[#6B6B6B]" >Or</p>
                 <hr className="w-[43%] " />
               </div>
-              <button className="border-solid border-[1px] border-[#DF3B11] py-2 md:py-4 text-white md:text-[#DF3B11] rounded-full w-full mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#DF3B11] md:bg-transparent  ">
+              <button className="border-solid border-[1px] border-[#DF3B11] py-2 md:py-3 text-white md:text-[#DF3B11] rounded-full w-full mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#DF3B11] md:bg-transparent  ">
                 <span className='mx-auto flex gap-4 '>
                   <IoLogoGoogle
                     size={24}
@@ -68,19 +80,12 @@ const Login = () => {
                   Continue with Google
                 </span>
               </button>
-              <button className="border-solid border-[1px] border-[#292D32] py-2 md:py-4 text-white md:text-[#292D32] rounded-full w-full mt-4 hover:bg-opacity-80 transition flex items-center text-center bg-[#292D32] md:bg-transparent  ">
-                <span className='mx-auto flex gap-4 '>
-                  <IoLogoApple
-                    size={24}
-                  />
-                  Continue with Apple
-                </span>
-              </button>
-              <div className=' mt-8 md:mt-20 flex flex-col items-center '>
-                <p className="text-white/80 md:text-[#6B6B6B] font-nunito font-medium text-[16px] md:text-xl leading-[20px]">
+             
+              <div className=' mt-8 md:mt-10 flex flex-col items-center '>
+                <p className="text-white/80 md:text-[#6B6B6B] font-nunito font-medium text-[16px] leading-[20px]">
                   Don't have an account? 
                   <Link href='/auth/sign_up'>
-                    <span className=" text-[#DF3B11] font-nunito font-medium ml-2 text-[16px] md:text-xl leading-[20px] hover:underline cursor-pointer mt-2 ">
+                    <span className=" text-[#DF3B11] font-nunito font-medium ml-2 text-[16px] leading-[20px] hover:underline cursor-pointer mt-2 ">
                       Sign up here
                     </span>
                   </Link>

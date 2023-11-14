@@ -56,7 +56,7 @@ const Nav = () => {
                 className='text-gray-200'
               />
             </Link></li>
-            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/login'> Login </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/auth/login'> Login </Link></li>
           </ul>
         </div>
 
@@ -92,7 +92,7 @@ const Nav = () => {
           </div>
           {/* right side */}
           <div className='w-[257px] h-[50px] items-center justify-end text-white gap-[20px] mr-[98px] flex'>
-            <Link href='/login' >
+            <Link href='/auth/login' >
               <div className='w-[102px] h-full border-solid border-[1px] border-[#FBFBFB] hover:border-[#E24F29] hover:bg-[#E24F29] rounded-[60px] px-[24px] py-[13px] z-1'>
                 <button >
                   <p className='font-nunito font-medium text-[16px] leading-[20.48px] -tracking-[2%] text-center '>Log in</p>
@@ -100,7 +100,7 @@ const Nav = () => {
               </div>
             </Link>
 
-            <Link href='/sign_up' >
+            <Link href='/auth/sign_up' >
               <div className='w-[150px] h-[48px]  bg-[#E24F29] hover:bg-[#FBFBFB] hover:text-[#E24F29] rounded-[60px] px-[20px] py-[12px] z-1'>
                 <button >
                   <p className='font-nunito font-medium text-[16px] leading-[20.48px] -tracking-[2%] text-center '>Create account</p>
