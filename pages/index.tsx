@@ -9,6 +9,25 @@ import Footer from '@/components/Footer'
 import Nav from '@/components/Nav'
 
 
+import { getSession } from "next-auth/react";
+import { NextPageContext } from 'next';
+
+export async function getServerSideProps(context: NextPageContext) {
+  const session = await getSession(context);
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/login",
+        permanent: false,
+      }
+    }
+  }
+
+  return {
+    props: {}
+  }
+}
 
 export default function Home() {
   return (

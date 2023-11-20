@@ -1,10 +1,15 @@
-'use client'
+
 
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineShoppingCart } from 'react-icons/ai'
 import { FiShoppingCart } from 'react-icons/fi'
+
 import Link from 'next/link'
 import Image from 'next/image'
+
+import { signOut } from "next-auth/react";
+
+
 import Logo from '@/public/images/logo.png'
 
 
@@ -19,7 +24,6 @@ const Nav = () => {
   }
 
 
-
   return (
     <div className='absolute w-full h-[113px]'>
 
@@ -32,6 +36,7 @@ const Nav = () => {
               src={Logo}
               width={114}
               height={47}
+              alt=''
             />
           </Link>
         </div>
@@ -56,7 +61,7 @@ const Nav = () => {
                 className='text-gray-200'
               />
             </Link></li>
-            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><Link href='/auth/login'> Login </Link></li>
+            <li className='font-inter font-normal text-[18px] leading-[32px] p-3'><button onClick={() => signOut()}> Log Out </button></li>
           </ul>
         </div>
 
@@ -92,7 +97,7 @@ const Nav = () => {
           </div>
           {/* right side */}
           <div className='w-[257px] h-[50px] items-center justify-end text-white gap-[20px] mr-[98px] flex'>
-            <Link href='/auth/login' >
+            <Link href='/login' >
               <div className='w-[102px] h-full border-solid border-[1px] border-[#FBFBFB] hover:border-[#E24F29] hover:bg-[#E24F29] rounded-[60px] px-[24px] py-[13px] z-1'>
                 <button >
                   <p className='font-nunito font-medium text-[16px] leading-[20.48px] -tracking-[2%] text-center '>Log in</p>
@@ -100,14 +105,15 @@ const Nav = () => {
               </div>
             </Link>
 
-            <Link href='/auth/sign_up' >
-              <div className='w-[150px] h-[48px]  bg-[#E24F29] hover:bg-[#FBFBFB] hover:text-[#E24F29] rounded-[60px] px-[20px] py-[12px] z-1'>
-                <button >
-                  <p className='font-nunito font-medium text-[16px] leading-[20.48px] -tracking-[2%] text-center '>Create account</p>
-                </button>
-              </div>
 
-            </Link>
+            <div className='w-[150px] h-[48px]  bg-[#E24F29] hover:bg-[#FBFBFB] hover:text-[#E24F29] rounded-[60px] px-[20px] py-[12px] z-1'>
+              <button onClick={() => signOut()}>
+
+                <p className='font-nunito font-medium text-[16px] leading-[20.48px] -tracking-[2%] text-center '>Log Out</p>
+              </button>
+            </div>
+
+
 
           </div>
         </div>
